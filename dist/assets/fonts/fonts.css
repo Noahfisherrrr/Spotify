@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('./avenir/AvenirLTStd-Medium.woff2') format('woff2'),
+        url('./avenir/AvenirLTStd-Medium.woff') format('woff'),
+        url('./avenir/AvenirLTStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('poppins/Poppins-Medium.woff2') format('woff2'),
+        url('poppins/Poppins-Medium.woff') format('woff'),
+        url('poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jakarta';
+    src: url('jakarta/PlusJakartaSans-Regular.woff2') format('woff2'),
+        url('jakarta/PlusJakartaSans-Regular.woff') format('woff'),
+        url('jakarta/PlusJakartaSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

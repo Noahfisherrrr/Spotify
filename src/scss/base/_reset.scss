@@ -1,0 +1,51 @@
+// 1. You can group related selectors using nesting
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// 2. Global reset
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// 3. Media & Layout
+html, body {
+  height: 100%;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+// 4. Typography & Elements
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// 5. Forms Reset
+input, button, textarea, select {
+  font: inherit;
+  color: inherit; // Allows typography.scss to control color
+}
+
+// Minimal button reset - only remove browser defaults
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block; // Standard for buttons
+  line-height: normal;
+}

@@ -1,0 +1,14 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+button{
+    @include mixins.flex-center(0);
+    background-color: variables.$secondary-color;
+    color: variables.$white;
+    max-width: 89px;
+    padding: 8px 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: variables.$poppins, sans-serif;
+}
