@@ -11,6 +11,7 @@
 │   │   ├── /components # _buttons.scss, _navbar.scss, _card.scss
 │   │   ├── /layout     # _grid.scss, _header.scss, _footer.scss
 │   │   ├── /abstracts  # _variables.scss, _mixins.scss
+│   │   ├── /pages      # _homepage.scss , _search.scss 
 │   │   └── main.scss   # The "1" that @imports everything else
 │   │
 │   ├── /assets         # Raw images and SVGs
@@ -20,21 +21,15 @@
 └── dashboard.html      # SaaS App Page
 
 Dev keywords: 
-    add: new files added;
+    add: New files added;
     fix: Buggs fixed;
     
 Noah: 
-    reviews
-    contact us
-    footer
 
 
-Ia: 
-    services
-    stories
+
+Sandro:
 
 
-Mate: 
-    header
-    hero
-    about us(section)
+
+Giorgi:
