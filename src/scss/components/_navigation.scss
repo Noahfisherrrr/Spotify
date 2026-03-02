@@ -20,9 +20,10 @@ header{
 .nav-item{
     @include flex-center(0.5rem);
     flex-direction: column;
+    
     img{
-        width: 4rem;
-        height: 4rem;
+        width: 2rem;
+        height: 2rem;
         
     }
     span{
@@ -37,9 +38,9 @@ header{
 }
 .nav-link.is-active {
         img, span {
-            filter: invert(56%) sepia(50%) 
-            saturate(1478%) hue-rotate(107deg) 
-            brightness(97%) contrast(93%);
+            filter: invert(61%) sepia(53%) 
+                    saturate(3025%) hue-rotate(104deg) 
+                    brightness(96%) contrast(90%);
         }
     }
 

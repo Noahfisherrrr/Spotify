@@ -80,8 +80,8 @@ header {
   flex-direction: column;
 }
 .nav-item img {
-  width: 4rem;
-  height: 4rem;
+  width: 2rem;
+  height: 2rem;
 }
 .nav-item span {
   font-size: 1.2rem;
@@ -94,7 +94,7 @@ header {
 }
 
 .nav-link.is-active img, .nav-link.is-active span {
-  filter: invert(56%) sepia(50%) saturate(1478%) hue-rotate(107deg) brightness(97%) contrast(93%);
+  filter: invert(61%) sepia(53%) saturate(3025%) hue-rotate(104deg) brightness(96%) contrast(90%);
 }
 
 body {
