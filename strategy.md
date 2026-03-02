@@ -25,7 +25,7 @@ Dev keywords:
     fix: Buggs fixed;
     
 Noah: 
-
+    Navigation bar(Mobile);
 
 
 Sandro:

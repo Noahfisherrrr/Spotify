@@ -1,7 +1,6 @@
-@mixin flex-center($gap-size) {
+@mixin flex-center($gap-size: 1rem) {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: $gap-size;
 }
