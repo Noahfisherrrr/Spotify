@@ -1,12 +1,14 @@
 @use "base/reset";
 @use "base/typography";
 @use "components/buttons";
+@use "abstracts/variables";
 @use "abstracts/mixins";
 
+@use "components/navigation";
 
 
 
-
-main{
+body{
     @include mixins.flex-center(2rem);
+    background-color: variables.$bg-primary;
 }
