@@ -1,6 +1,6 @@
 @use "../abstracts/variables";
 
-body, p, span, a, h1, h2, h3, h4, h5, h6{
+body, p, span, a, h1, h2, h3, h4, h5, h6, button {
     font-family: variables.$satoshi, sans-serif;
     font-weight: 400;
 }

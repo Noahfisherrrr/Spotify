@@ -46,9 +46,19 @@ button {
   line-height: normal;
 }
 
-body, p, span, a, h1, h2, h3, h4, h5, h6 {
+body, p, span, a, h1, h2, h3, h4, h5, h6, button {
   font-family: "Satoshi", sans-serif, sans-serif;
   font-weight: 400;
+}
+
+button {
+  border-radius: 0.8rem;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  background: #202020;
+  color: #E0E0E0;
 }
 
 header {
@@ -95,6 +105,34 @@ header {
 
 .nav-link.filter img, .nav-link.filter span {
   filter: invert(61%) sepia(53%) saturate(3025%) hue-rotate(104deg) brightness(96%) contrast(90%);
+}
+
+.nav-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  align-self: start;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.filter-bttn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-bttn {
+  background-color: transparent;
+  width: 4rem;
+  height: 4rem;
+  padding: 0;
+}
+.filter-bttn img {
+  width: 100%;
 }
 
 body {

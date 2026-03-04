@@ -1,4 +1,22 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-
+.nav-filter{
+    @include flex-center(1rem);
+    justify-content: space-between;
+    align-self: start;
+    width: 100%;
+    padding: 1.5rem;
+}
+.filter-bttn-wrapper{
+        @include flex-center(1rem);
+}
+.filter-bttn{
+    background-color: transparent;
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+    img{
+        width: 100%;
+    }
+}
