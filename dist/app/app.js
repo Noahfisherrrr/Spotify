@@ -1,8 +1,14 @@
 const navLink = document.querySelectorAll('.nav-link');
+    let activeLink = document.querySelector('.nav-link.filter');
 
-navLink .forEach(link => {
+navLink.forEach(link => {
     link.addEventListener('click', () => {
-        navLink.forEach(nav => nav.classList.remove('is-active'));
-        link.classList.add('is-active');
+        if (activeLink === link) return;
+        
+        if (activeLink) {
+            activeLink.classList.remove('filter');
+        }
+        link.classList.add('filter');
+        activeLink = link;
     });
-});
+    });

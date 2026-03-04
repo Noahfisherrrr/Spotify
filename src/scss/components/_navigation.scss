@@ -36,7 +36,7 @@ header{
 .nav-link {
     background: transparent;
 }
-.nav-link.is-active {
+.nav-link.filter {
         img, span {
             filter: invert(61%) sepia(53%) 
                     saturate(3025%) hue-rotate(104deg) 
