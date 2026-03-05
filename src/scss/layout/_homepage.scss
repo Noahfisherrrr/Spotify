@@ -1,4 +1,94 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+.nav-filter{
+    @include flex-center(1rem);
+    justify-content: space-between;
+    align-self: start;
+    width: 100%;
+    padding: 1.5rem;
+}
+.filter-bttn-wrapper{
+        @include flex-center(1rem);
+}
+.filter-bttn{
+    background-color: transparent;
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+    img{
+        width: 100%;
+    }
+}
+main{
+    @include flex-center(1rem);
+    flex-direction: column;
+    width: 100%;
 
+}
+.filtered-content{
+    @include flex-center(1rem);
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem;
+    
+}
+.filtered-item{
+    @include flex-center(1rem);
+    max-width: 17.5rem;
+    width: 100%;
+    background: #282828;
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+.img{
+    width: 4.3rem;
+    border-radius: 0.5rem;
+    }
+.filtered-item-info{
+    @include flex-center(1rem);
+    align-items: center;
+    flex-direction: column;
+    color: $white;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 5.8rem;
+    overflow: hidden;
+    span{
+        width: 100%;
+        text-align: start;
+    }
+
+}
+.filtered-item-info {
+    @include flex-center(1rem);
+    align-items: center;
+    flex-direction: column;
+    color: $white;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 5.8rem;
+    overflow: hidden;
+
+    span {
+        width: 100%;
+        text-align: start;
+        font-size: 1.4rem;
+        letter-spacing: 3%;
+    }
+
+    &:hover {
+        .filtered-item-title {
+            @include marquee(10s);
+            animation-play-state: running; 
+        }
+    }
+}
+
+.filtered-item-title {
+    display: inline-block; 
+    white-space: nowrap;
+    
+}
+@include marquee-key;

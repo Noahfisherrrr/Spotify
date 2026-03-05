@@ -5,10 +5,10 @@
 @use "abstracts/mixins";
 
 @use "components/navigation";
+@use "layout/homepage";
 
 
 
 body{
-    @include mixins.flex-center(2rem);
     background-color: variables.$bg-primary;
 }

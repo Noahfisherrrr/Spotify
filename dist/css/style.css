@@ -46,9 +46,19 @@ button {
   line-height: normal;
 }
 
-body, p, span, a, h1, h2, h3, h4, h5, h6 {
+body, p, span, a, h1, h2, h3, h4, h5, h6, button {
   font-family: "Satoshi", sans-serif, sans-serif;
   font-weight: 400;
+}
+
+button {
+  border-radius: 0.8rem;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  background: #202020;
+  color: #E0E0E0;
 }
 
 header {
@@ -69,7 +79,6 @@ header {
   justify-content: center;
   align-items: center;
   gap: 3.1rem;
-  max-width: 33.3rem;
 }
 
 .nav-item {
@@ -93,15 +102,132 @@ header {
   background: transparent;
 }
 
-.nav-link.is-active img, .nav-link.is-active span {
+.nav-link.filter img, .nav-link.filter span {
   filter: invert(61%) sepia(53%) saturate(3025%) hue-rotate(104deg) brightness(96%) contrast(90%);
 }
 
-body {
+.nav-filter {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+  justify-content: space-between;
+  align-self: start;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.filter-bttn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-bttn {
+  background-color: transparent;
+  width: 4rem;
+  height: 4rem;
+  padding: 0;
+}
+.filter-bttn img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+.filtered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.filtered-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-width: 17.5rem;
+  width: 100%;
+  background: #282828;
+  padding: 0.8rem;
+  border-radius: 1rem;
+}
+
+.img {
+  width: 4.3rem;
+  border-radius: 0.5rem;
+}
+
+.filtered-item-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 5.8rem;
+  overflow: hidden;
+}
+.filtered-item-info span {
+  width: 100%;
+  text-align: start;
+}
+
+.filtered-item-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 5.8rem;
+  overflow: hidden;
+}
+.filtered-item-info span {
+  width: 100%;
+  text-align: start;
+  font-size: 1.4rem;
+  letter-spacing: 3%;
+}
+.filtered-item-info:hover .filtered-item-title {
+  animation: marquee 10s linear infinite;
+  white-space: nowrap;
+  animation-play-state: running;
+}
+
+.filtered-item-title {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+body {
   background-color: #111111;
 }
 
