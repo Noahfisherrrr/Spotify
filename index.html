@@ -11,41 +11,95 @@
 <body>
     <header>
         <nav class="nav-bar">
-            <a class="nav-link" href="#">
+            <a class="nav-link filter" href="#">
                 <div class="nav-item">
                     <img src="dist/assets/img/svg-logo/home.svg" alt="home logo">
                     <span>Home</span>
                 </div>
-            </a class="nav-link">
+            </a>
             <a class="nav-link" href="#">
                 <div class="nav-item">
                     <img src="dist/assets/img/svg-logo/discover.svg" alt="discover logo">
                     <span>Discover</span>
                 </div>
-            </a class="nav-link">
-            <a class="nav-link" href="#">
+            </a>
+            <a class="nav-link" href="src/pages/search.html">
                 <div class="nav-item">
                     <img src="dist/assets/img/svg-logo/search.svg" alt="search logo">
                     <span>Search</span>
                 </div>
-            </a class="nav-link">
+            </a>
             <a class="nav-link" href="#">
                 <div class="nav-item">
                     <img src="dist/assets/img/svg-logo/library.svg" alt="library logo">
                     <span>Library</span>
                 </div>
-            </a class="nav-link">
+            </a>
             <a class="nav-link" href="#">
                 <div class="nav-item">
                     <img src="dist/assets/img/svg-logo/me.svg" alt="profile logo">
                     <span>Me</span>
                 </div>
-            </a class="nav-link">
+            </a>
         </nav>
-        <div class="nav-filter">
-                
-        </div>
     </header>
+    <section class="nav-filter">
+        <div class="filter-bttn-wrapper">
+            <button>Music</button>
+            <button>Podcasts</button>
+            <button>Audio Books</button>
+        </div>
+        <button class="filter-bttn">
+            <img src="dist/assets/img/svg-logo/filter-bttn.svg" alt="filter logo">
+        </button>
+    </section>
+    <main>
+        <section class="filtered-content">
+            <div class="filtered-item" id="filter-item">
+                <img src="dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="img">
+                <div class="filtered-item-info">
+                    <span class="filtered-item-title">Get Lucky (feat. Pharrell Williams and Nile Rodgers)</span>
+                    <span class="filtered-item-artist">Daft Punk</span>
+                </div>
+            </div>
+            <div class="filtered-item" id="filter-item">
+                <img src="dist/assets/img/album-img/daily-mix-2.png" alt="daily mix 2" class="img">
+                <div class="filtered-item-info">
+                    <span class="filtered-item-title">Daily Mix 2</span>
+                    <span class="filtered-item-artist">Spotify</span>
+                </div>
+            </div>
+            <div class="filtered-item" id="filter-item">
+                <img src="dist/assets/img/album-img/daily-mix.png" alt="daily mix" class="img">
+                <div class="filtered-item-info">
+                    <span class="filtered-item-title">Daily Mix</span>
+                    <span class="filtered-item-artist">Spotify</span>
+                </div>
+            </div>
+            <div class="filtered-item" id="filter-item">
+                <img src="dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="img">
+                <div class="filtered-item-info">
+                    <span class="filtered-item-title">Instant Crush</span>
+                    <span class="filtered-item-artist">Daft Punk</span>
+                </div>
+            </div>
+            <div class="filtered-item" id="filter-item">
+                <img src="dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="img">
+                <div class="filtered-item-info">
+                    <span class="filtered-item-title">Around the world</span>
+                    <span class="filtered-item-artist">Daft Punk</span>
+                </div>
+            </div>
+            <div class="filtered-item" id="filter-item">
+                <img src="dist/assets/img/album-img/rchp.png" alt="red hot chili peppers" class="img">
+                <div class="filtered-item-info">
+                    <span class="filtered-item-title">Rock mix</span>
+                    <span class="filtered-item-artist">Spotify</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
 
     <script src="dist/app/app.js"></script>
 </body>

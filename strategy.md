@@ -9,9 +9,9 @@
 │   ├── /scss           # The "7-1" SCSS architecture
 │   │   ├── /base       # _reset.scss, _typography.scss
 │   │   ├── /components # _buttons.scss, _navbar.scss, _card.scss
-│   │   ├── /layout     # _grid.scss, _header.scss, _footer.scss
+│   │   ├── /layout     # _homepage.scss , _search.scss 
 │   │   ├── /abstracts  # _variables.scss, _mixins.scss
-│   │   ├── /pages      # _homepage.scss , _search.scss 
+│   │   ├── /pages      # homepage.html , search.html 
 │   │   └── main.scss   # The "1" that @imports everything else
 │   │
 │   ├── /assets         # Raw images and SVGs
@@ -26,6 +26,7 @@ Dev keywords:
     
 Noah: 
     Navigation bar(Mobile);
+    Homepage (Mobile);
 
 
 Sandro:
@@ -33,3 +34,4 @@ Sandro:
 
 
 Giorgi:
+    Search Page(Mobile);
