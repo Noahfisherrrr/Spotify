@@ -28,6 +28,7 @@ main{
 }
 .filtered-content{
     @include flex-center(1rem);
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
@@ -76,6 +77,7 @@ main{
         text-align: start;
         font-size: 1.4rem;
         letter-spacing: 3%;
+        line-height: 100%;
     }
 
     &:hover {
@@ -92,4 +94,28 @@ main{
     
 }
 @include marquee-key; //this is keyframe for marquee brooo
+.suggested-content{
+    @include flex-center(1.5rem);
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem;
+}
+.suggested-content-header{
+    @include flex-center(1rem);
+    justify-content: space-between;
+    width: 100%;
+    h3{
+        font-size: 2rem;
+    }
+}
+.more-bttn{
+    @include flex-center(0.5rem);
+    padding: 0 0.8rem;
 
+    div{
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: $text-color;
+    }
+}
