@@ -49,6 +49,7 @@ button {
 body, p, span, a, h1, h2, h3, h4, h5, h6, button {
   font-family: "Satoshi", sans-serif, sans-serif;
   font-weight: 400;
+  color: #E0E0E0;
 }
 
 button {
