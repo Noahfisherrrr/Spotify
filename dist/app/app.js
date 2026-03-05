@@ -1,5 +1,5 @@
 const navLink = document.querySelectorAll('.nav-link');
-    let activeLink = document.querySelector('.nav-link.filter');
+let activeLink = document.querySelector('.nav-link.filter');
 
 navLink.forEach(link => {
     link.addEventListener('click', () => {

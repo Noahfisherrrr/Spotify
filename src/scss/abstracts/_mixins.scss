@@ -4,3 +4,14 @@
     align-items: center;
     gap: $gap-size;
 }
+
+@mixin marquee($duration: 7s) {
+    animation: marquee $duration linear infinite;
+    white-space: nowrap;
+}
+@mixin marquee-key{
+    @keyframes marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-100%); }
+    }
+}
