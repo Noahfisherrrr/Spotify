@@ -119,3 +119,11 @@ main{
         background: $text-color;
     }
 }
+.suggested-card-container{
+    @include flex-center(1rem);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    overflow-x: scroll;
+}

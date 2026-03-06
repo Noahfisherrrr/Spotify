@@ -266,6 +266,18 @@ main {
   background: #898989;
 }
 
+.suggested-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  overflow-x: scroll;
+}
+
 body {
   background-color: #111111;
 }
