@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+
 .nav-filter{
     @include flex-center(1rem);
     justify-content: space-between;
