@@ -26,6 +26,7 @@ Dev keywords:
     
 Noah: 
     Navigation bar(Mobile);
+    Footer Player(Mobile);
     Homepage (Mobile);
 
 
