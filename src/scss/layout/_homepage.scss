@@ -127,6 +127,8 @@ main{
     width: 100%;
     overflow-x: auto;
     scroll-behavior: smooth;
+    padding-top: 1.5rem;
+
     &::-webkit-scrollbar {
         display: none;
     }
@@ -136,7 +138,7 @@ main{
     @include flex-center(1rem);
     flex: 0 0 14rem;
     flex-direction: column;
-    padding-top: 1.5rem;
+    cursor: pointer;
 }
 .card-banner{
     width: 100%;
@@ -193,3 +195,4 @@ main{
     font-size: 1rem;
     color: $text-color;
 }
+

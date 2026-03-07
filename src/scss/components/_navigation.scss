@@ -14,7 +14,8 @@ header{
 }
 
 .nav-bar{
-    @include flex-center(3.1rem);
+    @include flex-center(1rem);
+    max-width: 100%;
 }
 .nav-item{
     @include flex-center(0.5rem);
