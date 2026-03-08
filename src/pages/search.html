@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="../../dist/assets/img/svg-logo/Primary_Logo_Green_CMYK.svg" type="image/x-icon">
     <link rel="stylesheet" href="../../dist/assets/fonts/fonts.css">
     <link rel="stylesheet" href="../../dist/css/style.css">
+    
 </head>
 <body>
     <header>
@@ -46,17 +47,17 @@
 
     <script src="../../dist/app/app.js"></script>
 
-    !-- ── Main Content ── -->
-  <main class="page-content">
+  <!-- ── Main Content ── -->
+  <main class="page-content search-content">
 
     <!-- Search -->
-    <div class="search-bar">
-      <input type="search" placeholder="What do you want to play?" aria-label="Search" />
-      <div class="search-bar__icons" aria-hidden="true">
-        <img src="../../dist/assets/img/searchimg/img/icons big.svg" alt="search icon" />
-        <img src="../../dist/assets/img/searchimg/img/icons big.png" alt="camera icon"/>
-      </div>
-    </div>
+  <div class="search-bar">
+    <div class="search-bar__input-wrapper">
+    <img class="search-bar__search-icon" src="../../dist/assets/img/searchimg/img/icons big.svg" alt="search icon" />
+    <input type="search" placeholder="What do you want to play?" aria-label="Search" />
+   </div>
+   <img class="search-bar__camera-icon" src="../../dist/assets/img/searchimg/img/icons big.png" alt="camera icon" />
+  </div>
 
     <!-- Heading -->
     <h1 class="section-heading">Browse all</h1>
@@ -69,63 +70,49 @@
       <!-- Made For You -->
       <li class="category-card card--blue-dark">
         <div class="category-card__bg"></div>
-        <span class="category-card__title">Made For<br>You</span>
         <img class="category-card__art" src="../../dist/assets/img/searchimg/img/Made For You.jpg" alt="Made For You" />
       </li>
 
       <!-- New Releases -->
       <li class="category-card card--amber">
         <div class="category-card__bg"></div>
-        <span class="category-card__title">New<br>Releases</span>
         <img class="category-card__badge" src="../../dist/assets/img/searchimg/img/Frame 97.png" alt="" aria-hidden="true" />
-        
       </li>
 
       <!-- Spotify Classics -->
       <li class="category-card card--purple-mid">
         <div class="category-card__bg"></div>
-        <span class="category-card__title">Spotify<br>Classics</span>
-        <img class="category-card__art" src="../../dist/assets/img/searchimg/img/Frame 98.png" alt="Made For You" />
-      
+        <img class="category-card__art" src="../../dist/assets/img/searchimg/img/Frame 98.png" alt="Spotify Classics" />
       </li>
 
       <!-- Charts -->
       <li class="category-card card--purple-light">
         <div class="category-card__bg"></div>
-        <span class="category-card__title">Charts</span>
         <img class="category-card__badge" src="../../dist/assets/img/searchimg/img/Frame 99.png" alt="" aria-hidden="true" />
-        <div class="category-card__label">Top<br>Songs<br>Global</div>
       </li>
 
       <!-- Trending -->
       <li class="category-card card--pink">
         <div class="category-card__bg"></div>
-        <span class="category-card__title">Trending</span>
         <img class="category-card__badge" src="../../dist/assets/img/searchimg/img/Frame 100.png" alt="" aria-hidden="true" />
       </li>
 
       <!-- Discover -->
       <li class="category-card card--teal">
         <div class="category-card__bg"></div>
-        <span class="category-card__title">Discover</span>
         <img class="category-card__badge" src="../../dist/assets/img/searchimg/img/Frame 101.png" alt="" aria-hidden="true" />
-        <div class="category-card__label category-card__label--sm">Your<br>Di…</div>
       </li>
 
       <!-- Spotify Singles -->
       <li class="category-card card--gray">
         <div class="category-card__bg"></div>
-        <span class="category-card__title">Spotify<br>Singles</span>
         <img class="category-card__badge" src="../../dist/assets/img/searchimg/img/Frame 102.png" alt="" aria-hidden="true" />
-        </div>
       </li>
 
       <!-- Decades -->
       <li class="category-card card--orange">
         <div class="category-card__bg"></div>
-        <span class="category-card__title">Decades</span>
         <img class="category-card__badge" src="../../dist/assets/img/searchimg/img/Frame 96.png" alt="" aria-hidden="true" />
-        </div>
       </li>
 
     </ul>
@@ -139,13 +126,11 @@
 
       <li class="category-card card--red">
         <div class="category-card__bg"></div>
-        <span class="category-card__title">Pop</span>
         <img class="category-card__badge" src="../../dist/assets/img/searchimg/img/Frame 102.png" alt="" aria-hidden="true" />
       </li>
 
       <li class="category-card card--green">
         <div class="category-card__bg"></div>
-        <span class="category-card__title">Country</span>
         <img class="category-card__badge" src="../../dist/assets/img/searchimg/img/Frame 101.png" alt="" aria-hidden="true" />
       </li>
 
