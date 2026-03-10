@@ -6,8 +6,7 @@ footer{
     padding: 0 0.8rem ;
     display: flex;
     justify-content: center;
-    position: fixed;
-    bottom: 9.5rem;
+    
 }
 .player-container {
     @include flex-center;
@@ -17,6 +16,8 @@ footer{
     width: 100%;
     border-radius: 1rem;
     z-index: 1000;
+    position: fixed;
+    bottom: 9.5rem;
 }
 .player-song-info {
     @include flex-center(0.5rem);
@@ -45,4 +46,21 @@ footer{
     padding: 0;
     border: none;
     cursor: pointer;
+}
+
+// tablet
+@media (min-width: 600px) {
+  
+}
+// desktop
+@media (min-width: 1024px) {
+    footer{
+        grid-area: footer;
+        width: 100%;
+        display: block;
+        padding: 0.2rem 0;
+    }
+    .player-container {
+        position: static;
+    }
 }

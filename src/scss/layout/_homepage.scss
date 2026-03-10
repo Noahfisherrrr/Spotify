@@ -11,7 +11,7 @@
     padding: 1.5rem;
 }
 .filter-bttn-wrapper{
-        @include flex-center(1rem);
+    @include flex-center(1rem);
 }
 .filter-bttn{
     background-color: transparent;
@@ -22,12 +22,12 @@
         width: 100%;
     }
 }
-main:not(.search-content) {
-    @include flex-center(1rem);
-    flex-direction: column;
-    width: 100%;
+// main:not(.search-content) {
+//     @include flex-center(1rem);
+//     flex-direction: column;
+//     width: 100%;
 
-}
+// }
 .filtered-content{
     @include flex-center(1rem);
     justify-content: space-between;
@@ -44,6 +44,7 @@ main:not(.search-content) {
     background: #282828;
     padding: 0.8rem;
     border-radius: 1rem;
+    flex-grow: 1;
 }
 .img{
     width: 4.3rem;
@@ -195,4 +196,21 @@ main:not(.search-content) {
 .suggestion-card-artist{
     font-size: 1rem;
     color: $text-color;
+}
+
+// tablet
+@media (min-width: 600px) {
+  
+}
+// desktop
+@media (min-width: 1024px) {
+    main{
+        border: 0.1px solid #202020;
+        border-radius: 1rem;
+        width: 100%;
+        overflow: hidden; 
+    }
+    .filtered-content{
+        display: none;
+    }
 }

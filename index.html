@@ -10,93 +10,163 @@
 </head>
 <body>
     <header>
-        <nav class="nav-bar">
-            <a class="nav-link filter" href="#">
-                <div class="nav-item">
-                    <img src="dist/assets/img/svg-logo/home.svg" alt="home logo">
-                    <span>Home</span>
+        <nav class="header-nav-bar" aria-label="desktop navigation">
+            <a class="header-nav-link" href="src/pages/library.html">
+                <div class="header-nav-item">
+                    <img src="dist/assets/img/svg-logo/library.svg" alt="library logo">
+                    <span>My Library</span>
                 </div>
             </a>
-            <a class="nav-link" href="#">
-                <div class="nav-item">
-                    <img src="dist/assets/img/svg-logo/discover.svg" alt="discover logo">
-                    <span>Discover</span>
-                </div>
-            </a>
-            <a class="nav-link" href="src/pages/search.html">
-                <div class="nav-item">
+            <div class="header-nav-mid-section">
+                <a class="header-nav-link-mid" href="#">
+                    <div class="header-nav-item-mid">
+                        <img src="dist/assets/img/svg-logo/home.svg" alt="home logo">
+                        <span>Home</span>
+                    </div>
+                </a>
+                <a class="header-nav-link-mid" href="#">
+                    <div class="header-nav-item-mid">
+                        <img src="dist/assets/img/svg-logo/discover.svg" alt="discover logo">
+                        <span>Discover</span>
+                    </div>
+                </a>
+            </div>
+            <a class="header-nav-link" href="src/pages/search.html">
+                <div class="header-nav-item">
                     <img src="dist/assets/img/svg-logo/search.svg" alt="search logo">
                     <span>Search</span>
                 </div>
             </a>
-            <a class="nav-link" href="src/pages/library.html">
-                <div class="nav-item">
-                    <img src="dist/assets/img/svg-logo/library.svg" alt="library logo">
-                    <span>Library</span>
-                </div>
-            </a>
-            <a class="nav-link" href="#">
-                <div class="nav-item">
-                    <img src="dist/assets/img/svg-logo/me.svg" alt="profile logo">
-                    <span>Me</span>
-                </div>
-            </a>
+            <div class="profile-container">
+
+                <a class="header-nav-link" href="#">
+                    <div class="header-nav-item">
+                        <img src="dist/assets/img/svg-logo/me.svg" alt="profile logo">
+                        <span>Me</span>
+                    </div>
+                </a>
+            </div>
         </nav>
     </header>
-    <section class="nav-filter">
-        <div class="filter-bttn-wrapper">
-            <button>Music</button>
-            <button>Podcasts</button>
-            <button>Audio Books</button>
-        </div>
-        <button class="filter-bttn">
-            <img src="dist/assets/img/svg-logo/filter-bttn.svg" alt="filter logo">
-        </button>
-    </section>
+    <aside class="sidebar" aria-label="library navigation">
+        <!-- <nav class="library-navigation"> -->
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="dist/assets/img/svg-logo/pins.svg" alt="pins logo">
+                    <span>Pins</span>
+                </div>
+                <div>
+                    <img src="dist/assets/img/svg-logo/more-vector.svg" alt="more">
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="dist/assets/img/svg-logo/playlist.svg" alt="playlist logo">
+                    <span>Playlist</span>
+                </div>
+                <div>
+                    <img src="dist/assets/img/svg-logo/more-vector.svg" alt="more">
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="dist/assets/img/svg-logo/liked-songs.svg" alt="liked songs logo">
+                    <span>Liked Songs</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="dist/assets/img/svg-logo/saves.svg" alt="saves logo">
+                    <span>Saves</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="dist/assets/img/svg-logo/albums.svg" alt="albums logo">
+                    <span>Albums</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="dist/assets/img/svg-logo/folders.svg" alt="folders logo">
+                    <span>Folders</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="dist/assets/img/svg-logo/podcasts.svg" alt="podcasts logo">
+                    <span>Podcasts</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="dist/assets/img/svg-logo/audio-books.svg" alt="audio books logo">
+                    <span>Audio Books</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="dist/assets/img/svg-logo/artists.svg" alt="artists logo">
+                    <span>Artists</span>
+                </div>
+            </a>
+        <!-- </nav> -->
+
+    </aside>
     <main>
+        <section class="nav-filter">
+            <div class="filter-bttn-wrapper">
+                <button>Music</button>
+                <button>Podcasts</button>
+                <button>Audio Books</button>
+            </div>
+            <button class="filter-bttn">
+                <img src="dist/assets/img/svg-logo/filter-bttn.svg" alt="filter logo">
+            </button>
+        </section>
         <section class="filtered-content">
-            <div class="filtered-item" id="filter-item">
+            <article class="filtered-item" >
                 <img src="dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="img">
                 <div class="filtered-item-info">
                     <span class="filtered-item-title">Get Lucky (feat. Pharrell Williams and Nile Rodgers)</span>
                     <span class="filtered-item-artist">Daft Punk</span>
                 </div>
-            </div>
-            <div class="filtered-item" id="filter-item">
+            </article>
+            <article class="filtered-item" >
                 <img src="dist/assets/img/album-img/daily-mix-2.png" alt="daily mix 2" class="img">
                 <div class="filtered-item-info">
                     <span class="filtered-item-title">Daily Mix 2</span>
                     <span class="filtered-item-artist">Spotify</span>
                 </div>
-            </div>
-            <div class="filtered-item" id="filter-item">
+            </article>
+            <article class="filtered-item" >
                 <img src="dist/assets/img/album-img/daily-mix.png" alt="daily mix" class="img">
                 <div class="filtered-item-info">
                     <span class="filtered-item-title">Daily Mix</span>
                     <span class="filtered-item-artist">Spotify</span>
                 </div>
-            </div>
-            <div class="filtered-item" id="filter-item">
+            </article>
+            <article class="filtered-item">
                 <img src="dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="img">
                 <div class="filtered-item-info">
                     <span class="filtered-item-title">Instant Crush</span>
                     <span class="filtered-item-artist">Daft Punk</span>
                 </div>
-            </div>
-            <div class="filtered-item" id="filter-item">
+            </article>
+            <article class="filtered-item">
                 <img src="dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="img">
                 <div class="filtered-item-info">
                     <span class="filtered-item-title">Around the world</span>
                     <span class="filtered-item-artist">Daft Punk</span>
                 </div>
-            </div>
-            <div class="filtered-item" id="filter-item">
+            </article>
+            <article class="filtered-item">
                 <img src="dist/assets/img/album-img/rchp.png" alt="red hot chili peppers" class="img">
                 <div class="filtered-item-info">
                     <span class="filtered-item-title">Rock mix</span>
                     <span class="filtered-item-artist">Spotify</span>
                 </div>
-            </div>
+            </article>
         </section>
         <section class="suggested-content">
             <div class="suggested-content-header">
@@ -108,7 +178,7 @@
                 </div>
             </div>
             <div class="suggested-card-container">
-                <div class="suggestion-card">
+                <article class="suggestion-card">
                     <div class="card-banner">
                         <img src="dist/assets/img/made-for-you/image1.png" alt="discover weekly">
                         <div class="card-background-1"></div>
@@ -118,8 +188,8 @@
                         <span class="suggestion-card-title">Discover Weekly</span>
                         <span class="suggestion-card-artist">Your weekly mixtape of fresh music.</span>
                     </div>
-                </div>
-                <div class="suggestion-card">
+                </article>
+                <article class="suggestion-card">
                     <div class="card-banner">
                         <img src="dist/assets/img/made-for-you/image2.png" alt="discover weekly">
                         <div class="card-background-1"></div>
@@ -131,8 +201,8 @@
                             Linkin Park, System Of A Down, Coal Chamber...
                         </span>
                     </div>
-                </div>
-                <div class="suggestion-card">
+                </article>
+                <article class="suggestion-card">
                     <div class="card-banner">
                         <img src="dist/assets/img/made-for-you/image3.png" alt="discover weekly">
                         <div class="card-background-1"></div>
@@ -144,8 +214,8 @@
                             Avril Lavigne, Lorde, Charli XCX and more
                         </span>
                     </div>
-                </div>
-                <div class="suggestion-card">
+                </article>
+                <article class="suggestion-card">
                     <div class="card-banner">
                         <img src="dist/assets/img/made-for-you/image4.png" alt="discover weekly">
                         <div class="card-background-1"></div>
@@ -157,8 +227,8 @@
                             The Strokes, Martin Garrix, MGMT and more
                         </span>
                     </div>
-                </div>
-                <div class="suggestion-card">
+                </article>
+                <article class="suggestion-card">
                     <div class="card-banner">
                         <img src="dist/assets/img/made-for-you/image5.png" alt="discover weekly">
                         <div class="card-background-1"></div>
@@ -169,8 +239,8 @@
                         <span class="suggestion-card-artist">
                             The Strokes, Martin Garrix, MGMT and more</span>
                     </div>
-                </div>
-                <div class="suggestion-card">
+                </article>
+                <article class="suggestion-card">
                     <div class="card-banner">
                         <img src="dist/assets/img/made-for-you/image6.png" alt="discover weekly">
                         <div class="card-background-1"></div>
@@ -182,8 +252,8 @@
                             Frank Sinatra, Gerhard Trede, Dean Martin and more
                         </span>
                     </div>
-                </div>
-                <div class="suggestion-card">
+                </article>
+                <article class="suggestion-card">
                     <div class="card-banner">
                         <img src="dist/assets/img/made-for-you/image7.png" alt="discover weekly">
                         <div class="card-background-1"></div>
@@ -194,8 +264,8 @@
                         <span class="suggestion-card-artist">
                             Your weekly mixtape of fresh music.</span>
                     </div>
-                </div>
-                <div class="suggestion-card">
+                </article>
+                <article class="suggestion-card">
                     <div class="card-banner">
                         <img src="dist/assets/img/made-for-you/image8.png" alt="discover weekly">
                         <div class="card-background-1"></div>
@@ -207,10 +277,12 @@
                             The Strokes, Martin Garrix, MGMT and more
                         </span>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
-        <section class="suggested-content">
+
+        <!-- Your top mixes -->
+        <section class="suggested-content"> 
             <div class="suggested-content-header">
                 <h3>Your top mixes</h3>
                 <div class="more-bttn">
@@ -220,7 +292,7 @@
                 </div>
             </div>
             <div class="suggested-card-container">
-                <div class="suggestion-card">
+                <article class="suggestion-card">
                     <div class="card-banner">
                         <img src="dist/assets/img/top-mixed/image1.png" alt="discover weekly">
                         <div class="card-background-1"></div>
@@ -232,21 +304,34 @@
                             Red Hot Chili Peppers, R.E.M., Guns N' Roses...
                         </span>
                     </div>
-                </div>
-                <div class="suggestion-card">
+                </article>
+                <article class="suggestion-card">
                     <div class="card-banner">
-                        <img src="dist/assets/img/top-mixed/image2.png" alt="discover weekly">
+                        <img src="dist/assets/img/top-mixed/koba.png" alt="discover weekly">
                         <div class="card-background-1"></div>
                         <div class="card-background-2"></div>
                     </div>
                     <div class="card-content">
-                        <span class="suggestion-card-title">Chill Mix</span>
+                        <span class="suggestion-card-title">Koba Jiniuzashvili</span>
                         <span class="suggestion-card-artist">
-                            MF DOOM, Daft Punk, The Chainsmokers, and more
+                            Georgian OST and earkiller songs
                         </span>
                     </div>
-                </div>
-                <div class="suggestion-card">
+                </article>
+                <article class="suggestion-card">
+                    <div class="card-banner">
+                        <img src="dist/assets/img/top-mixed/naila.png" alt="naila weekly">
+                        <div class="card-background-1"></div>
+                        <div class="card-background-2"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="suggestion-card-title">Naila Khuntsaria</span>
+                        <span class="suggestion-card-artist">
+                            Better than ABBA, Van Morrison and Jennis Joplin
+                        </span>
+                    </div>
+                </article>
+                <article class="suggestion-card">
                     <div class="card-banner">
                         <img src="dist/assets/img/top-mixed/image3.png" alt="discover weekly">
                         <div class="card-background-1"></div>
@@ -258,8 +343,21 @@
                             Red Hot Chili Peppers, R.E.M., Guns N' Roses...
                         </span>
                     </div>
-                </div>
-                <div class="suggestion-card">
+                </article>
+                <article class="suggestion-card">
+                    <div class="card-banner">
+                        <img src="dist/assets/img/top-mixed/luna.png" alt="lunas weekly">
+                        <div class="card-background-1"></div>
+                        <div class="card-background-2"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="suggestion-card-title">Luna Maziashvili</span>
+                        <span class="suggestion-card-artist">
+                            Diva of Krdeli business and greatest singer of all time
+                        </span>
+                    </div>
+                </article>
+                <article class="suggestion-card">
                     <div class="card-banner">
                         <img src="dist/assets/img/top-mixed/image4.png" alt="discover weekly">
                         <div class="card-background-1"></div>
@@ -271,34 +369,8 @@
                             Daft Punk, MGMT, Muse, and more
                         </span>
                     </div>
-                </div>
-                <div class="suggestion-card">
-                    <div class="card-banner">
-                        <img src="dist/assets/img/top-mixed/image5.png" alt="discover weekly">
-                        <div class="card-background-1"></div>
-                        <div class="card-background-2"></div>
-                    </div>
-                    <div class="card-content">
-                        <span class="suggestion-card-title">Happy Mix</span>
-                        <span class="suggestion-card-artist">
-                            The Turtles, Van Morrison, ABBA and more
-                        </span>
-                    </div>
-                </div>
-                <div class="suggestion-card">
-                    <div class="card-banner">
-                        <img src="dist/assets/img/top-mixed/image6.png" alt="discover weekly">
-                        <div class="card-background-1"></div>
-                        <div class="card-background-2"></div>
-                    </div>
-                    <div class="card-content">
-                        <span class="suggestion-card-title">David Bowie Mix</span>
-                        <span class="suggestion-card-artist">
-                            Soft Cell, The Who and The Clash
-                        </span>
-                    </div>
-                </div>
-                <div class="suggestion-card">
+                </article>
+                <article class="suggestion-card">
                     <div class="card-banner">
                         <img src="dist/assets/img/top-mixed/image7.png" alt="discover weekly">
                         <div class="card-background-1"></div>
@@ -310,8 +382,8 @@
                             Kylie Minogue, Charli XCX, Cage The Elephant and...
                         </span>
                     </div>
-                </div>
-                <div class="suggestion-card">
+                </article>
+                <article class="suggestion-card">
                     <div class="card-banner">
                         <img src="dist/assets/img/top-mixed/image8.png" alt="discover weekly">
                         <div class="card-background-1"></div>
@@ -323,7 +395,7 @@
                             Chuck Berry, Skeeter David, Van Morrison and...
                         </span>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
     </main>
@@ -343,6 +415,40 @@
                     <img src="dist/assets/img/svg-logo/play.svg" alt="play logo">
                 </button>  
             </div>
+        </div>
+        <div class="nav-wrapper">
+            <nav class="nav-bar" aria-label="mobile navigation">
+                <a class="nav-link filter" href="#">
+                    <div class="nav-item">
+                        <img src="dist/assets/img/svg-logo/home.svg" alt="home logo">
+                        <span>Home</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <div class="nav-item">
+                        <img src="dist/assets/img/svg-logo/discover.svg" alt="discover logo">
+                        <span>Discover</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="src/pages/search.html">
+                    <div class="nav-item">
+                        <img src="dist/assets/img/svg-logo/search.svg" alt="search logo">
+                        <span>Search</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="src/pages/library.html">
+                    <div class="nav-item">
+                        <img src="dist/assets/img/svg-logo/library.svg" alt="library logo">
+                        <span>Library</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <div class="nav-item">
+                        <img src="dist/assets/img/svg-logo/me.svg" alt="profile logo">
+                        <span>Me</span>
+                    </div>
+                </a>
+            </nav>
         </div>
     </footer>
 
