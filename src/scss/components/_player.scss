@@ -54,9 +54,13 @@ footer{
 }
 // desktop
 @media (min-width: 1024px) {
+    footer{
+        grid-area: footer;
+        width: 100%;
+        display: block;
+        padding: 0.2rem 0;
+    }
     .player-container {
-        position: fixed;
-        bottom: 0;
-        left: 0;
+        position: static;
     }
 }

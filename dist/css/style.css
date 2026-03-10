@@ -62,6 +62,10 @@ button {
   color: #E0E0E0;
 }
 
+.header-nav-bar {
+  display: none;
+}
+
 .nav-wrapper {
   position: fixed;
   bottom: 0;
@@ -118,8 +122,14 @@ button {
   .nav-bar, .nav-wrapper {
     display: none;
   }
+  header {
+    grid-area: header;
+    width: 100%;
+  }
   .header-nav-bar {
+    grid-area: header;
     display: flex;
+    width: 100%;
   }
 }
 footer {
@@ -191,10 +201,52 @@ footer {
 }
 
 @media (min-width: 1024px) {
+  footer {
+    grid-area: footer;
+    width: 100%;
+    display: block;
+    padding: 0.2rem 0;
+  }
   .player-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    position: static;
+  }
+}
+.sidebar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .library-navigation, .sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    background-color: inherit;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 1000;
+  }
+  .library-navigation a, .sidebar a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .library-navigation a span, .sidebar a span {
+    font-size: 1.4em;
+  }
+  .sidebar-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    color: #898989;
+    font-size: 1.4em;
+    letter-spacing: 3%;
+    cursor: pointer;
   }
 }
 .nav-filter {
@@ -222,15 +274,6 @@ footer {
   padding: 0;
 }
 .filter-bttn img {
-  width: 100%;
-}
-
-main:not(.search-content) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  flex-direction: column;
   width: 100%;
 }
 
@@ -450,6 +493,12 @@ main:not(.search-content) {
 }
 
 @media (min-width: 1024px) {
+  main {
+    border: 0.1px solid #202020;
+    border-radius: 1rem;
+    width: 100%;
+    overflow: hidden;
+  }
   .filtered-content {
     display: none;
   }
@@ -728,6 +777,20 @@ input[type=search]:-webkit-autofill, input[type=search]:-webkit-autofill:hover, 
 
 body {
   background-color: #111111;
+}
+@media (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: 248px 1fr;
+    grid-template-rows: 60px 1fr 80px;
+    grid-template-areas: "header  header" "sidebar  main" "sidebar   footer";
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+main {
+  grid-area: main;
 }
 
 /*# sourceMappingURL=style.css.map */
