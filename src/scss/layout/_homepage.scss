@@ -22,12 +22,6 @@
         width: 100%;
     }
 }
-// main:not(.search-content) {
-//     @include flex-center(1rem);
-//     flex-direction: column;
-//     width: 100%;
-
-// }
 .filtered-content{
     @include flex-center(1rem);
     justify-content: space-between;
@@ -97,6 +91,7 @@
     
 }
 @include marquee-key; //this is keyframe for marquee brooo
+
 .suggested-content{
     @include flex-center(1.5rem);
     flex-direction: column;
@@ -212,6 +207,9 @@
     }
     .filtered-content{
         display: none;
+    }
+    .suggestion-card{
+        flex: 0 0 17rem;
     }
     .friends-panel {
         display: none;
