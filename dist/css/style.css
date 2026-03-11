@@ -552,6 +552,9 @@ footer {
   .filtered-content {
     display: none;
   }
+  .suggestion-card {
+    flex: 0 0 17rem;
+  }
   .friends-panel {
     display: none;
     grid-area: friends;
