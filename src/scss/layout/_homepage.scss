@@ -213,4 +213,120 @@
     .filtered-content{
         display: none;
     }
+    .friends-panel {
+        display: none;
+        grid-area: friends;
+        background: $bg-primary;
+        overflow-y: auto;
+        padding: 2rem 1.5rem;
+        border: 0.1px solid #202020;
+        border-radius: 1rem;
+        margin-left: 0.5rem;
+    }
+
+    .friends-panel-header {
+        @include flex-center(0.5rem);
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+    }
+
+    .friends-panel-actions {
+        @include flex-center(0rem);
+        justify-content: flex-end;
+
+        button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+
+            &:hover {
+                filter: invert(61%) sepia(53%) 
+                    saturate(3025%) hue-rotate(104deg) 
+                    brightness(96%) contrast(90%);
+            }
+
+            img {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    }
+
+    .friend-item {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid #1a1a1a;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .friend-avatar {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .friend-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        overflow: hidden;
+    }
+
+    .friend-name {
+        font-size: 1.3rem;
+        font-family: $satoshi;
+        color: $text-color;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .friend-activity {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+
+        img {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+
+    .friend-song {
+        font-size: 1.2rem;
+        color: $text-color;
+        font-family: $satoshi;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .friend-separator {
+        color: #888;
+        font-size: 1.2rem;
+    }
+
+    .friend-artist {
+        font-size: 1.2rem;
+        color: #888;
+        font-family: $satoshi;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
 }

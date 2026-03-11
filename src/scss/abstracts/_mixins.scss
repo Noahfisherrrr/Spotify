@@ -17,8 +17,8 @@
 }
 @mixin grid-layout{
     display: grid;
-    grid-template-columns: 248px 1fr;  // sidebar | rest
-    grid-template-rows: 60px 1fr 80px; // header | main | footer
+    grid-template-columns: 24.8rem 1fr;  
+    grid-template-rows: 6rem 1fr 8rem; 
     grid-template-areas:
         "header  header"
         "sidebar  main"
