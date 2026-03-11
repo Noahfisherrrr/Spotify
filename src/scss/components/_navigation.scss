@@ -114,6 +114,17 @@
     .profile-item{
         max-width: 4rem;
         width: 100%;
+        
+    }
+    .profile-link:hover{
+        filter: invert(61%) sepia(53%) 
+                saturate(3025%) hue-rotate(104deg) 
+                brightness(96%) contrast(90%);
+    }
+    .profile-container {
+        .profile-link:last-child:hover {
+            filter: none;
+        }
     }
 }
 
