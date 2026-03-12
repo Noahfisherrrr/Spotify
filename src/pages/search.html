@@ -10,42 +10,131 @@
     
 </head>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <a class="nav-link" href="../../index.html">
-                <div class="nav-item">
-                    <img src="../../dist/assets/img/svg-logo/home.svg" alt="home logo">
-                    <span>Home</span>
+   <header>
+        <nav class="header-nav-bar" aria-label="desktop navigation">
+            <a class="header-nav-link" href="Library.html">
+                <div class="header-nav-item filter">
+                    <img src="../../dist/assets/img/svg-logo/library.svg" alt="library logo">
+                    <span>My Library</span>
                 </div>
             </a>
-            <a class="nav-link" href="#">
-                <div class="nav-item">
-                    <img src="../../dist/assets/img/svg-logo/discover.svg" alt="discover logo">
-                    <span>Discover</span>
-                </div>
-            </a>
-            <a class="nav-link filter" href="search.html">
-                <div class="nav-item">
+            <div class="header-nav-mid-section">
+                <a class="header-nav-link-mid" href="../../index.html">
+                    <div class="header-nav-item-mid">
+                        <img src="../../dist/assets/img/svg-logo/home.svg" alt="home logo">
+                        <span>Home</span>
+                    </div>
+                </a>
+                <a class="header-nav-link-mid" href="#">
+                    <div class="header-nav-item-mid">
+                        <img src="../../dist/assets/img/svg-logo/discover.svg" alt="discover logo">
+                        <span>Discover</span>
+                    </div>
+                </a>
+            </div>
+            <a class="header-nav-link" href="search.html">
+                <div class="header-nav-item">
                     <img src="../../dist/assets/img/svg-logo/search.svg" alt="search logo">
                     <span>Search</span>
                 </div>
             </a>
-            <a class="nav-link" href="library.html">
-                <div class="nav-item">
-                    <img src="../../dist/assets/img/svg-logo/library.svg" alt="library logo">
-                    <span>Library</span>
-                </div>
-            </a>
-            <a class="nav-link" href="#">
-                <div class="nav-item">
-                    <img src="../../dist/assets/img/svg-logo/me.svg" alt="profile logo">
-                    <span>Me</span>
-                </div>
-            </a>
+            <div class="profile-container">
+                <a class="profile-link" href="#">
+                    <div class="profile-item">
+                        <img src="../../dist/assets/img/svg-logo/header-bell.svg" alt="profile logo">
+                    </div>
+                </a>
+                <a class="profile-link" href="#">
+                    <div class="profile-item">
+                        <img src="../../dist/assets/img/svg-logo/header-lock.svg" alt="profile logo">
+                    </div>
+                </a>
+                <a class="profile-link" id="friends-activity" href="#">
+                    <div class="profile-item">
+                        <img src="../../dist/assets/img/svg-logo/header-friends.svg" alt="profile logo">
+                    </div>
+                </a>
+                <a class="profile-link" href="#">
+                    <div class="profile-item">
+                        <img src="../../dist/assets/img/svg-logo/header-settings.svg" alt="profile logo">
+                    </div>
+                </a>
+                <a class="profile-link" href="#">
+                    <div class="profile-item">
+                        <img src="../../dist/assets/img/svg-logo/profile-pic.svg" alt="profile logo">
+                    </div>
+                </a>
+            </div>
         </nav>
     </header>
+    <aside class="sidebar" aria-label="library navigation">
+        <!-- <nav class="library-navigation"> -->
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/pins.svg" alt="pins logo">
+                    <span>Pins</span>
+                </div>
+                <div>
+                    <img src="../../dist/assets/img/svg-logo/more-vector.svg" alt="more">
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/playlist.svg" alt="playlist logo">
+                    <span>Playlist</span>
+                </div>
+                <div>
+                    <img src="../../dist/assets/img/svg-logo/more-vector.svg" alt="more">
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/liked-songs.svg" alt="liked songs logo">
+                    <span>Liked Songs</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/saves.svg" alt="saves logo">
+                    <span>Saves</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/albums.svg" alt="albums logo">
+                    <span>Albums</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/folders.svg" alt="folders logo">
+                    <span>Folders</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/podcasts.svg" alt="podcasts logo">
+                    <span>Podcasts</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/audio-books.svg" alt="audio books logo">
+                    <span>Audio Books</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/artists.svg" alt="artists logo">
+                    <span>Artists</span>
+                </div>
+            </a>
+        <!-- </nav> -->
 
-    <script src="../../dist/app/app.js"></script>
+      </aside>
+    
+
+  
 
   <!-- ── Main Content ── -->
   <main class="page-content search-content">
@@ -137,24 +226,128 @@
     </ul>
 
   </main>
+     <aside class="friends-panel" id="friends-panel">
+        <div class="friends-panel-header">
+            <h3>Friends Activity</h3>
+            <div class="friends-panel-actions">
+                <button class="friends-add-btn">
+                    <img src="../../dist/assets/img/svg-logo/add-friend.svg" alt="add friend">
+                </button>
+                <button class="friends-close-btn" id="friends-close-btn">
+                    <img src="../../dist/assets/img/svg-logo/close.svg" alt="close">
+                </button>
+            </div>
+        </div>
+        <div class="friends-list">
+            <div class="friend-item">
+                <img src="../../dist/assets/img/svg-logo/profile-pic.svg" alt="friend avatar" class="friend-avatar">
+                <div class="friend-info">
+                    <span class="friend-name">FriendlyMusicListener</span>
+                    <div class="friend-activity">
+                        <img src="../../dist/assets/img/svg-logo/equalizer.svg" alt="playing">
+                        <span class="friend-song">Goosebumps</span>
+                        <span class="friend-separator">•</span>
+                        <span class="friend-artist">Travis Scott</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="friends-list">
+            <div class="friend-item">
+                <img src="../../dist/assets/img/friend.png" alt="friend avatar" class="friend-avatar">
+                <div class="friend-info">
+                    <span class="friend-name">FriendlyMusicListener</span>
+                    <div class="friend-activity">
+                        <img src="../../dist/assets/img/svg-logo/equalizer.svg" alt="playing">
+                        <span class="friend-song">Goosebumps</span>
+                        <span class="friend-separator">•</span>
+                        <span class="friend-artist">Travis Scott</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="friends-list">
+            <div class="friend-item">
+                <img src="../../dist/assets/img/friend2.png" alt="friend avatar" class="friend-avatar">
+                <div class="friend-info">
+                    <span class="friend-name">FriendlyMusicListener</span>
+                    <div class="friend-activity">
+                        <img src="../../dist/assets/img/svg-logo/equalizer.svg" alt="playing">
+                        <span class="friend-song">Goosebumps</span>
+                        <span class="friend-separator">•</span>
+                        <span class="friend-artist">Travis Scott</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="friends-list">
+            <div class="friend-item">
+                <img src="../../  dist/assets/img/friend3.png" alt="friend avatar" class="friend-avatar">
+                <div class="friend-info">
+                    <span class="friend-name">FriendlyMusicListener</span>
+                    <div class="friend-activity">
+                        <img src="../../dist/assets/img/svg-logo/equalizer.svg" alt="playing">
+                        <span class="friend-song">Goosebumps</span>
+                        <span class="friend-separator">•</span>
+                        <span class="friend-artist">Travis Scott</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="player-container">
+            <img src="../../dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="player-album">
+            <div class="player-song-info">
+                <span class="player-song-title">Get Lucky (feat. Pharrell Williams and Nile Rodgers)</span>
+                <span class="player-song-artist">Daft Punk</span>
+            </div>
+            <div class="action-buttons-container">
+                <button class="action-bttn">
+                    <img src="../../dist/assets/img/svg-logo/add-fav.svg" alt="favorite logo">
+                </button>
 
-  <!-- ── Mini Player ── -->
-  <div class="mini-player" role="region" aria-label="Now playing">
-    <div class="mini-player__art"></div>
-    <div class="mini-player__info">
-      <p class="mini-player__title">Get Lucky (feat. Pharrell Willi…</p>
-      <p class="mini-player__artist">Daft Punk</p>
-      <img class="mini-player__badge" src="../../dist/assets/img/searchimg/img/Rectangle 6.png" alt="" aria-hidden="true" />
-    </div>
-    <div class="mini-player__actions">
-      <button class="mini-player__btn" aria-label="Add to library">
-        <img src="../../dist/assets/img/searchimg/img/icons big (1).png" alt="" aria-hidden="true" />
-      </button>
-      <button class="mini-player__btn mini-player__btn--play" aria-label="Play">
-        <img src="../../dist/assets/img/searchimg/img/icons big (2).png" alt="" aria-hidden="true" />
-      </button>
-    </div>
-  </div>
+                <button class="action-bttn">
+                    <img src="../../dist/assets/img/svg-logo/play.svg" alt="play logo">
+                </button>  
+            </div>
+        </div>
+        <div class="nav-wrapper">
+            <nav class="nav-bar" aria-label="mobile navigation">
+                <a class="nav-link " href="../../index.html">
+                    <div class="nav-item">
+                        <img src="../../dist/assets/img/svg-logo/home.svg" alt="home logo">
+                        <span>Home</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <div class="nav-item">
+                        <img src="../../dist/assets/img/svg-logo/discover.svg" alt="discover logo">
+                        <span>Discover</span>
+                    </div>
+                </a>
+                <a class="nav-link filter" href="search.html">
+                    <div class="nav-item">
+                        <img src="../../dist/assets/img/svg-logo/search.svg" alt="search logo">
+                        <span>Search</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="library.html">
+                    <div class="nav-item">
+                        <img src="../../dist/assets/img/svg-logo/library.svg" alt="library logo">
+                        <span>Library</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <div class="nav-item">
+                        <img src="../../dist/assets/img/svg-logo/me.svg" alt="profile logo">
+                        <span>Me</span>
+                    </div>
+                </a>
+            </nav>
+        </div>
+    </footer>
 
+  <script src="../../dist/js/script.js"></script>
 </body>
 </html>
