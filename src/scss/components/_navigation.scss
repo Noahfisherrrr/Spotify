@@ -109,12 +109,15 @@
         align-items: center;
         gap: 1rem;
         width: 100%;
-        padding-right: 0.5rem;;
+        padding-right: 0.5rem;
     }
     .profile-item{
         max-width: 4rem;
         width: 100%;
-        
+    }
+    .profile.link{
+        display: block;
+        width: 100%;
     }
     .profile-link:hover{
         filter: invert(61%) sepia(53%) 
