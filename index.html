@@ -48,7 +48,7 @@
                         <img src="dist/assets/img/svg-logo/header-lock.svg" alt="profile logo">
                     </div>
                 </a>
-                <a class="profile-link friends-activity" href="#">
+                <a class="profile-link" id="friends-activity" href="#">
                     <div class="profile-item">
                         <img src="dist/assets/img/svg-logo/header-friends.svg" alt="profile logo">
                     </div>
@@ -189,10 +189,20 @@
         <section class="suggested-content">
             <div class="suggested-content-header">
                 <h3>Made For You</h3>
-                <div class="more-bttn">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="more-bttn-container">
+                    <div class="pagination-btn-container">
+                        <button id="prev-pgnt-bttn">
+                            <img src="dist/assets/img/svg-logo/prev-pgnt.svg" alt="prev pagination" >
+                        </button>
+                        <button id="next-pgnt-bttn">
+                            <img src="dist/assets/img/svg-logo/next-pgnt.svg" alt="next pagination" >
+                        </button>
+                    </div>
+                    <div class="more-bttn">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
             <div class="suggested-card-container">
@@ -303,10 +313,20 @@
         <section class="suggested-content"> 
             <div class="suggested-content-header">
                 <h3>Your top mixes</h3>
-                <div class="more-bttn">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="more-bttn-container">
+                    <div class="pagination-btn-container">
+                        <button id="prev-pgnt-bttn">
+                            <img src="dist/assets/img/svg-logo/prev-pgnt.svg" alt="prev pagination" >
+                        </button>
+                        <button id="next-pgnt-bttn">
+                            <img src="dist/assets/img/svg-logo/next-pgnt.svg" alt="next pagination" >
+                        </button>
+                    </div>
+                    <div class="more-bttn">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
             <div class="suggested-card-container">
@@ -417,14 +437,14 @@
             </div>
         </section>
     </main>
-    <aside class="friends-panel">
+    <aside class="friends-panel" id="friends-panel">
         <div class="friends-panel-header">
             <h3>Friends Activity</h3>
             <div class="friends-panel-actions">
                 <button class="friends-add-btn">
                     <img src="dist/assets/img/svg-logo/add-friend.svg" alt="add friend">
                 </button>
-                <button class="friends-close-btn">
+                <button class="friends-close-btn" id="friends-close-btn">
                     <img src="dist/assets/img/svg-logo/close.svg" alt="close">
                 </button>
             </div>

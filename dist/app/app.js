@@ -13,9 +13,9 @@ navLink.forEach(link => {
     });
     });
 
-const friendsBtn = document.querySelector('.friends-activity');
-const friendsPanel = document.querySelector('.friends-panel');
-const friendsCloseBtn = document.querySelector('.friends-close-btn');
+const friendsBtn = document.getElementById('friends-activity');
+const friendsPanel = document.getElementById('friends-panel');
+const friendsCloseBtn = document.getElementById('friends-close-btn');
 
 function openFriends() {
     document.body.classList.add('friends-open');

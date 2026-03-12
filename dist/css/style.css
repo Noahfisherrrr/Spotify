@@ -175,6 +175,10 @@ button {
     max-width: 4rem;
     width: 100%;
   }
+  .profile.link {
+    display: block;
+    width: 100%;
+  }
   .profile-link:hover {
     filter: invert(61%) sepia(53%) saturate(3025%) hue-rotate(104deg) brightness(96%) contrast(90%);
   }
@@ -450,6 +454,10 @@ footer {
   background: #898989;
 }
 
+.pagination-btn-container {
+  display: none;
+}
+
 .suggested-card-container {
   display: flex;
   justify-content: center;
@@ -554,6 +562,28 @@ footer {
   }
   .suggestion-card {
     flex: 0 0 17rem;
+  }
+  .more-bttn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    justify-content: space-between;
+  }
+  .pagination-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #next-pgnt-bttn, #prev-pgnt-bttn {
+    background: transparent;
+    width: 100%;
+    padding: 1rem;
+  }
+  #next-pgnt-bttn img, #prev-pgnt-bttn img {
+    max-width: 4rem;
+    width: 100%;
   }
   .friends-panel {
     display: none;

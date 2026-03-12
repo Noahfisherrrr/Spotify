@@ -117,6 +117,9 @@
         background: $text-color;
     }
 }
+.pagination-btn-container{
+    display: none
+}
 .suggested-card-container{
     @include flex-center(1rem);
     justify-content: flex-start;
@@ -210,6 +213,22 @@
     }
     .suggestion-card{
         flex: 0 0 17rem;
+    }
+    .more-bttn-container{
+        @include flex-center(0.2rem);
+        justify-content: space-between;
+    }
+    .pagination-btn-container{
+        @include flex-center(0.5rem);
+    }
+    #next-pgnt-bttn, #prev-pgnt-bttn{
+        background: transparent;
+        width: 100%;
+        padding: 1rem;
+        img{
+            max-width: 4rem;
+            width: 100%;
+        }
     }
     .friends-panel {
         display: none;
