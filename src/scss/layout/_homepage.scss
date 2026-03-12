@@ -201,7 +201,9 @@
 
 // tablet
 @media (min-width: 600px) {
-  
+  .friends-panel{
+    display: none;
+}
 }
 // desktop
 @media (min-width: 1024px) {
