@@ -9,6 +9,9 @@
     align-self: start;
     width: 100%;
     padding: 1.5rem;
+    position: sticky;
+    top: 0;
+    background: $nav-bg-reverse;
 }
 .filter-bttn-wrapper{
     @include flex-center(1rem);
@@ -206,7 +209,10 @@
         border: 0.1px solid #202020;
         border-radius: 1rem;
         width: 100%;
-        overflow: hidden; 
+        overflow-x: hidden; 
+        overflow-y: auto;
+        min-height: 0;
+        position: relative;
     }
     .filtered-content{
         display: none;

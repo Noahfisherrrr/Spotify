@@ -312,6 +312,9 @@ footer {
   align-self: start;
   width: 100%;
   padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(0deg, rgba(6, 6, 6, 0.2) 0%, #060606 42.62%);
 }
 
 .filter-bttn-wrapper {
@@ -555,7 +558,10 @@ footer {
     border: 0.1px solid #202020;
     border-radius: 1rem;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 0;
+    position: relative;
   }
   .filtered-content {
     display: none;
