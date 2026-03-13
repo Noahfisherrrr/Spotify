@@ -715,8 +715,12 @@ footer {
   top: 0;
   z-index: 1000;
   background: linear-gradient(0deg, rgba(6, 6, 6, 0.2) 0%, #060606 42.62%);
+<<<<<<< Updated upstream
   margin-top: 1rem;
   padding: 1rem;
+=======
+  padding: 1.5rem 0;
+>>>>>>> Stashed changes
 }
 
 .search-bar__input-wrapper {
@@ -728,7 +732,7 @@ footer {
   background-color: #2a2a2a;
   border: none;
   border-radius: 0.6rem;
-  padding: 1.2rem 1.8rem 1.2rem 2rem;
+  padding: 1.2rem 1.8rem 1.2rem 4rem;
   font-family: "Satoshi", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
@@ -777,8 +781,8 @@ input[type=search]:-webkit-autofill, input[type=search]:-webkit-autofill:hover, 
 }
 
 .search-bar__camera-icon {
-  width: 4rem;
-  height: 4rem;
+  width: 2.8rem;
+  height: 2.8rem;
   object-fit: contain;
   flex-shrink: 0;
   cursor: pointer;
@@ -818,15 +822,16 @@ input[type=search]:-webkit-autofill, input[type=search]:-webkit-autofill:hover, 
 .category-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 1.2rem;
   margin-bottom: 2.4rem;
+  padding: 1rem 0;
 }
 
 .category-card {
   position: relative;
-  border-radius: 0.8rem;
+  border-radius: 1.2rem;
   overflow: hidden;
-  aspect-ratio: 3/2;
+  aspect-ratio: 4/3;
   cursor: pointer;
   background-size: cover;
   background-position: center;
