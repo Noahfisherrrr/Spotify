@@ -23,6 +23,7 @@ function openFriends() {
 
 function closeFriends() {
     document.body.classList.remove('friends-open');
+    friendsPanel.classList.remove('active');
 }
 
 friendsBtn.addEventListener('click', (e) => {
