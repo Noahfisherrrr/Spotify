@@ -33,3 +33,21 @@ friendsBtn.addEventListener('click', (e) => {
 });
 
 friendsCloseBtn.addEventListener('click', closeFriends);
+
+const range = document.getElementById('range');
+const cur = document.getElementById('cur');
+function format(sec) {
+    const m = Math.floor(sec / 60);
+    const s = Math.floor(sec % 60);
+    return m + ':' + String(s).padStart(2, '0');
+}
+
+function updateTrack(){
+    const percent = (range.value / range.max) * 100;
+    range.style.background = `linear-gradient(to right,
+                            #E0E0E0 ${percent}%,
+                            rgba(255,255,255,0.15) ${percent}%)`;
+    cur.textContent = format(range.value);
+}
+range.addEventListener('input', updateTrack);
+updateTrack();
