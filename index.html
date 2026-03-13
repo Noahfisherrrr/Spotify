@@ -508,19 +508,42 @@
     </aside>
     <footer>
         <div class="player-container">
-            <img src="dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="player-album">
-            <div class="player-song-info">
-                <span class="player-song-title">Get Lucky (feat. Pharrell Williams and Nile Rodgers)</span>
-                <span class="player-song-artist">Daft Punk</span>
+            <div class="player-mobile">
+                <img src="dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="player-album">
+                <div class="player-song-info">
+                    <span class="player-song-title">Get Lucky (feat. Pharrell Williams and Nile Rodgers)</span>
+                    <span class="player-song-artist">Daft Punk</span>
+                </div>
+                <div class="action-buttons-container">
+                    <button class="action-bttn">
+                        <img src="dist/assets/img/svg-logo/add-fav.svg" alt="favorite logo">
+                    </button>
+                    <button class="action-bttn">
+                        <img src="dist/assets/img/svg-logo/play.svg" alt="play logo">
+                    </button>
+                </div>
             </div>
-            <div class="action-buttons-container">
-                <button class="action-bttn">
-                    <img src="dist/assets/img/svg-logo/add-fav.svg" alt="favorite logo">
-                </button>
-
-                <button class="action-bttn">
-                    <img src="dist/assets/img/svg-logo/play.svg" alt="play logo">
-                </button>  
+            <div class="player-desktop">
+                <div class="player-actions">
+                    <div class="player-action-buttons">
+                        <button class="action-button" id="pauseBttn">
+                            <img src="dist/assets/img/player-icons/pause.svg" alt="pause icon">
+                        </button>
+                        <button class="action-button" id="prevBttn">
+                            <img src="dist/assets/img/player-icons/prev-song.svg" alt="previous icon">
+                        </button>
+                        <button class="action-button" id="nextBttn">
+                            <img src="dist/assets/img/player-icons/next-song.svg" alt="next icon">
+                        </button>
+                        <button class="action-button" id="shuffleBttn">
+                            <img src="dist/assets/img/player-icons/shuffle.svg" alt="shuffle icon">
+                        </button>
+                        <button class="action-button" id="repeatBttn">
+                            <img src="dist/assets/img/player-icons/repeat.svg" alt="repeat icon">
+                        </button>
+                    </div>
+                </div>
+                <div class="player-title"></div>
             </div>
         </div>
         <div class="nav-wrapper">
