@@ -5,6 +5,9 @@
 // ─────────────────────────────────────────
 // Search Bar
 // ─────────────────────────────────────────
+.search-content-wrapper{
+  padding: 1rem;
+}
 .search-bar {
     display: flex;
     align-items: center;
@@ -226,40 +229,39 @@ input[type='search'] {
         position: relative;
         padding: 1rem;
     }
-}
-
-
-
-
-  // ── Search Bar ───────────────────────────
-  .search-bar {
-    display: none;
-  }
-
-  // ── Section label row ────────────────────
-  .section-label-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1.4rem;
-  }
-
-  .section-label--mobile {
-    display: none;
-  }
-
-  .section-label { margin-bottom: 0; }
-
-  .section-nav-arrows {
-    display: flex;
-    gap: 0.8rem;
-
-    button {
-      background: none;
-      border: none;
-      color: #b3b3b3;
-      font-size: 1.8rem;
-      cursor: pointer;
+    
+    
+    
+    
+    // ── Search Bar ───────────────────────────
+    .search-bar {
+      display: none;
+    }
+    
+    // ── Section label row ────────────────────
+    .section-label-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.4rem;
+    }
+    
+    .section-label--mobile {
+      display: none;
+    }
+    
+    .section-label { margin-bottom: 0; }
+    
+    .section-nav-arrows {
+      display: flex;
+      gap: 0.8rem;
+      
+      button {
+        background: none;
+        border: none;
+        color: #b3b3b3;
+        font-size: 1.8rem;
+        cursor: pointer;
       padding: 0 0.4rem;
       transition: color 0.15s ease;
       line-height: 1;
@@ -288,7 +290,7 @@ input[type='search'] {
       font-weight: 700;
       color: $white;
     }
-
+    
     .recent-searches__more {
       background: none;
       border: none;
@@ -301,13 +303,13 @@ input[type='search'] {
       &:hover { color: $white; }
     }
   }
-
+  
   .recent-searches__list {
     display: flex;
     gap: 2.4rem;
     overflow-x: auto;
     scrollbar-width: none;
-
+    
     &::-webkit-scrollbar { display: none; }
   }
 
@@ -325,16 +327,16 @@ input[type='search'] {
     position: relative;
     width: 12rem;
     height: 12rem;
-
+    
     &:hover .recent-searches__remove { opacity: 1; }
   }
-
+  
   .recent-searches__img {
     width: 12rem;
     height: 12rem;
     object-fit: cover;
     border-radius: 50%;
-
+    
     &--square {
       border-radius: 0.8rem;
     }
@@ -407,3 +409,5 @@ input[type='search'] {
       transform: scale(0.98);
     }
   }
+  
+}
