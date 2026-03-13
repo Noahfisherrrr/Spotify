@@ -9,93 +9,225 @@
     <link rel="stylesheet" href="../../dist/css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <a class="nav-link" href="../../index.html">
-                <div class="nav-item">
-                    <img src="../../dist/assets/img/svg-logo/home.svg" alt="home logo">
-                    <span>Home</span>
+      <header>
+        <nav class="header-nav-bar" aria-label="desktop navigation">
+            <a class="header-nav-link" href="Library.html">
+                <div class="header-nav-item filter">
+                    <img src="../../dist/assets/img/svg-logo/library.svg" alt="library logo">
+                    <span>My Library</span>
                 </div>
-            </a >
-            <a class="nav-link" href="#">
-                <div class="nav-item">
-                    <img src="../../dist/assets/img/svg-logo/discover.svg" alt="discover logo">
-                    <span>Discover</span>
-                </div>
-            </a >
-            <a class="nav-link" href="search.html">
-                <div class="nav-item">
+            </a>
+            <div class="header-nav-mid-section">
+                <a class="header-nav-link-mid" href="../../index.html">
+                    <div class="header-nav-item-mid">
+                        <img src="../../dist/assets/img/svg-logo/home.svg" alt="home logo">
+                        <span>Home</span>
+                    </div>
+                </a>
+                <a class="header-nav-link-mid" href="#">
+                    <div class="header-nav-item-mid">
+                        <img src="../../dist/assets/img/svg-logo/discover.svg" alt="discover logo">
+                        <span>Discover</span>
+                    </div>
+                </a>
+            </div>
+            <a class="header-nav-link" href="search.html">
+                <div class="header-nav-item">
                     <img src="../../dist/assets/img/svg-logo/search.svg" alt="search logo">
                     <span>Search</span>
                 </div>
-            </a >
-            <a class="nav-link filter" href="library.html">
-                <div class="nav-item">
-                    <img src="../../dist/assets/img/svg-logo/library.svg" alt="library logo">
-                    <span>Library</span>
-                </div>
-            </a >
-            <a class="nav-link" href="#">
-                <div class="nav-item">
-                    <img src="../../dist/assets/img/svg-logo/me.svg" alt="profile logo">
-                    <span>Me</span>
-                </div>
-            </a >
+            </a>
+            <div class="profile-container">
+                <a class="profile-link" href="#">
+                    <div class="profile-item">
+                        <img src="../../dist/assets/img/svg-logo/header-bell.svg" alt="profile logo">
+                    </div>
+                </a>
+                <a class="profile-link" href="#">
+                    <div class="profile-item">
+                        <img src="../../dist/assets/img/svg-logo/header-lock.svg" alt="profile logo">
+                    </div>
+                </a>
+                <a class="profile-link" id="friends-activity" href="#">
+                    <div class="profile-item">
+                        <img src="../../dist/assets/img/svg-logo/header-friends.svg" alt="profile logo">
+                    </div>
+                </a>
+                <a class="profile-link" href="#">
+                    <div class="profile-item">
+                        <img src="../../dist/assets/img/svg-logo/header-settings.svg" alt="profile logo">
+                    </div>
+                </a>
+                <a class="profile-link" href="#">
+                    <div class="profile-item">
+                        <img src="../../dist/assets/img/svg-logo/profile-pic.svg" alt="profile logo">
+                    </div>
+                </a>
+            </div>
         </nav>
     </header>
 
-    <script src="../../dist/app/app.js"></script>
+  <aside class="sidebar" aria-label="library navigation">
+        <!-- <nav class="library-navigation"> -->
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/pins.svg" alt="pins logo">
+                    <span>Pins</span>
+                </div>
+                <div>
+                    <img src="../../dist/assets/img/svg-logo/more-vector.svg" alt="more">
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/playlist.svg" alt="playlist logo">
+                    <span>Playlist</span>
+                </div>
+                <div>
+                    <img src="../../dist/assets/img/svg-logo/more-vector.svg" alt="more">
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/liked-songs.svg" alt="liked songs logo">
+                    <span>Liked Songs</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/saves.svg" alt="saves logo">
+                    <span>Saves</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/albums.svg" alt="albums logo">
+                    <span>Albums</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/folders.svg" alt="folders logo">
+                    <span>Folders</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/podcasts.svg" alt="podcasts logo">
+                    <span>Podcasts</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/audio-books.svg" alt="audio books logo">
+                    <span>Audio Books</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-items">
+                    <img src="../../dist/assets/img/svg-logo/artists.svg" alt="artists logo">
+                    <span>Artists</span>
+                </div>
+            </a>
+        <!-- </nav> -->
 
-    <!-- Library lists start from here -->
-                <section class="list_container">
-                    <div class="library_category">
-                        <div class="library_category_select">
-                            <div class="category_text">Playlists</div>
-                            <div class="category_arrow"><img src="/dist/assets/img/library-img/arrow.png" alt=""></div>
+      </aside>
+      <main>
+          
+              <!-- Library lists start from here -->
+                <div class="search-bar">
+    <div class="search-bar__input-wrapper">
+    <img class="search-bar__search-icon" src="../../dist/assets/img/searchimg/img/icons big.svg" alt="search icon" />
+    <input type="search" placeholder="Search library" aria-label="Search" />
+   </div>
+   <img class="search-bar__plus-icon" src="/dist/assets/img/library-img/Plus.png" alt="Plus icon" />
+  </div>
+                    <section class="list_container">
+                        <div class="library_category">
+                            <div class="library_category_select">
+                                <div class="category_text">Playlists</div>
+                                <div class="category_arrow"><img src="/dist/assets/img/library-img/arrow.png" alt=""></div>
+                            </div>
                         </div>
-                    </div>
-                                        <div class="library_category">
-                        <div class="library_category_select">
-                            <div class="category_text">Playlists by Spotify</div>
-                            <div class="category_arrow"><img src="/dist/assets/img/library-img/arrow.png" alt=""></div>
+                                            <div class="library_category">
+                            <div class="library_category_select">
+                                <div class="category_text">Playlists by Spotify</div>
+                                <div class="category_arrow"><img src="/dist/assets/img/library-img/arrow.png" alt=""></div>
+                            </div>
                         </div>
-                    </div>
-                                        <div class="library_category">
-                        <div class="library_category_select">
-                            <div class="category_text">Albums</div>
-                            <div class="category_arrow"><img src="/dist/assets/img/library-img/arrow.png" alt=""></div>
+                                            <div class="library_category">
+                            <div class="library_category_select">
+                                <div class="category_text">Albums</div>
+                                <div class="category_arrow"><img src="/dist/assets/img/library-img/arrow.png" alt=""></div>
+                            </div>
                         </div>
-                    </div>
-                                        <div class="library_category">
-                        <div class="library_category_select">
-                            <div class="category_text">Folders</div>
-                            <div class="category_arrow"><img src="/dist/assets/img/library-img/arrow.png" alt=""></div>
+                                            <div class="library_category">
+                            <div class="library_category_select">
+                                <div class="category_text">Folders</div>
+                                <div class="category_arrow"><img src="/dist/assets/img/library-img/arrow.png" alt=""></div>
+                            </div>
                         </div>
-                    </div>
-                                        <div class="library_category">
-                        <div class="library_category_select">
-                            <div class="category_text">Artists</div>
-                            <div class="category_arrow"><img src="/dist/assets/img/library-img/arrow.png" alt=""></div>
+                                            <div class="library_category">
+                            <div class="library_category_select">
+                                <div class="category_text">Artists</div>
+                                <div class="category_arrow"><img src="/dist/assets/img/library-img/arrow.png" alt=""></div>
+                            </div>
                         </div>
-                    </div>
-        </section>
+            </section>
+      </main>
             <footer>
         <div class="player-container">
-            <img src="/dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="player-album">
+            <img src="../../dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="player-album">
             <div class="player-song-info">
                 <span class="player-song-title">Get Lucky (feat. Pharrell Williams and Nile Rodgers)</span>
                 <span class="player-song-artist">Daft Punk</span>
             </div>
             <div class="action-buttons-container">
                 <button class="action-bttn">
-                    <img src="/dist/assets/img/svg-logo/add-fav.svg" alt="favorite logo">
+                    <img src="../../dist/assets/img/svg-logo/add-fav.svg" alt="favorite logo">
                 </button>
 
                 <button class="action-bttn">
-                    <img src="/dist/assets/img/svg-logo/play.svg" alt="play logo">
+                    <img src="../../dist/assets/img/svg-logo/play.svg" alt="play logo">
                 </button>  
             </div>
         </div>
+        <div class="nav-wrapper">
+            <nav class="nav-bar" aria-label="mobile navigation">
+                <a class="nav-link " href="../../index.html">
+                    <div class="nav-item">
+                        <img src="../../dist/assets/img/svg-logo/home.svg" alt="home logo">
+                        <span>Home</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <div class="nav-item">
+                        <img src="../../dist/assets/img/svg-logo/discover.svg" alt="discover logo">
+                        <span>Discover</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="search.html">
+                    <div class="nav-item">
+                        <img src="../../dist/assets/img/svg-logo/search.svg" alt="search logo">
+                        <span>Search</span>
+                    </div>
+                </a>
+                <a class="nav-link filter" href="library.html">
+                    <div class="nav-item">
+                        <img src="../../dist/assets/img/svg-logo/library.svg" alt="library logo">
+                        <span>Library</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <div class="nav-item">
+                        <img src="../../dist/assets/img/svg-logo/me.svg" alt="profile logo">
+                        <span>Me</span>
+                    </div>
+                </a>
+            </nav>
+        </div>
     </footer>
+
+  <script src="../../dist/js/script.js"></script>
 </body>
 </html>
