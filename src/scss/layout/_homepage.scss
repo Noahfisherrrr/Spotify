@@ -2,7 +2,9 @@
 @use "../abstracts/mixins" as *;
 
 
-
+.friends-panel{
+    display: none;
+}
 .nav-filter{
     @include flex-center(1rem);
     justify-content: space-between;
@@ -247,6 +249,9 @@
         border: 0.1px solid #202020;
         border-radius: 1rem;
         margin-left: 0.5rem;
+    }
+    .active{
+        display: block;
     }
 
     .friends-panel-header {
