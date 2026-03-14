@@ -17,6 +17,8 @@
 
 body {
   background-color: variables.$bg-primary;
+      padding: 0.5rem;
+
 
   @media (min-width: 1024px) {
     @include mixins.grid-layout;
