@@ -1189,12 +1189,14 @@ input[type=search]:-webkit-autofill, input[type=search]:-webkit-autofill:hover, 
 
 .library_category_select {
   font-size: 2rem;
+  margin-top: 2rem;
   display: flex;
   padding-right: 2rem;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
-  width: 100%;
+  width: 90%;
+  border-bottom: 0.2rem solid #202020;
 }
 
 .search-bar__plus-icon {
@@ -1203,6 +1205,37 @@ input[type=search]:-webkit-autofill, input[type=search]:-webkit-autofill:hover, 
   object-fit: contain;
   flex-shrink: 0;
   cursor: pointer;
+}
+
+.category_arrow {
+  display: inline-block;
+}
+
+details {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-family: "Satoshi", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  height: 4rem;
+  width: 100%;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+summary::marker {
+  content: "";
+}
+
+p {
+  color: white;
 }
 
 body {
