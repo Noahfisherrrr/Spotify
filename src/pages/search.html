@@ -153,26 +153,157 @@
 
   </div>
   </main>
-
+<aside class="friends-panel" id="friends-panel">
+        <div class="friends-panel-header">
+            <h3>Friends Activity</h3>
+            <div class="friends-panel-actions">
+                <button class="friends-add-btn">
+                    <img src="../../dist/assets/img/svg-logo/add-friend.svg" alt="add friend">
+                </button>
+                <button class="friends-close-btn" id="friends-close-btn">
+                    <img src="../../dist/assets/img/svg-logo/close.svg" alt="close">
+                </button>
+            </div>
+        </div>
+        <div class="friends-list">
+            <div class="friend-item">
+                <img src="../../dist/assets/img/svg-logo/profile-pic.svg" alt="friend avatar" class="friend-avatar">
+                <div class="friend-info">
+                    <span class="friend-name">FriendlyMusicListener</span>
+                    <div class="friend-activity">
+                        <img src="../../dist/assets/img/svg-logo/equalizer.svg" alt="playing">
+                        <span class="friend-song">Goosebumps</span>
+                        <span class="friend-separator">•</span>
+                        <span class="friend-artist">Travis Scott</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="friends-list">
+            <div class="friend-item">
+                <img src="../../dist/assets/img/friend.png" alt="friend avatar" class="friend-avatar">
+                <div class="friend-info">
+                    <span class="friend-name">FriendlyMusicListener</span>
+                    <div class="friend-activity">
+                        <img src="../../dist/assets/img/svg-logo/equalizer.svg" alt="playing">
+                        <span class="friend-song">Goosebumps</span>
+                        <span class="friend-separator">•</span>
+                        <span class="friend-artist">Travis Scott</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="friends-list">
+            <div class="friend-item">
+                <img src="../../dist/assets/img/friend2.png" alt="friend avatar" class="friend-avatar">
+                <div class="friend-info">
+                    <span class="friend-name">FriendlyMusicListener</span>
+                    <div class="friend-activity">
+                        <img src="../../dist/assets/img/svg-logo/equalizer.svg" alt="playing">
+                        <span class="friend-song">Goosebumps</span>
+                        <span class="friend-separator">•</span>
+                        <span class="friend-artist">Travis Scott</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="friends-list">
+            <div class="friend-item">
+                <img src="../../dist/assets/img/friend3.png" alt="friend avatar" class="friend-avatar">
+                <div class="friend-info">
+                    <span class="friend-name">FriendlyMusicListener</span>
+                    <div class="friend-activity">
+                        <img src="../../dist/assets/img/svg-logo/equalizer.svg" alt="playing">
+                        <span class="friend-song">Goosebumps</span>
+                        <span class="friend-separator">•</span>
+                        <span class="friend-artist">Travis Scott</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
     <footer>
         <div class="player-container">
-            <img src="../../dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="player-album">
-            <div class="player-song-info">
-                <span class="player-song-title">Get Lucky (feat. Pharrell Williams and Nile Rodgers)</span>
-                <span class="player-song-artist">Daft Punk</span>
+            <div class="player-mobile">
+                <img src="../../dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="player-album">
+                <div class="player-song-info">
+                    <span class="player-song-title">Get Lucky (feat. Pharrell Williams and Nile Rodgers)</span>
+                    <span class="player-song-artist">Daft Punk</span>
+                </div>
+                <div class="action-buttons-container">
+                    <button class="action-bttn">
+                        <img src="../../dist/assets/img/svg-logo/add-fav.svg" alt="favorite logo">
+                    </button>
+                    <button class="action-bttn">
+                        <img src="../../dist/assets/img/svg-logo/play.svg" alt="play logo">
+                    </button>
+                </div>
             </div>
-            <div class="action-buttons-container">
-                <button class="action-bttn"><img src="../../dist/assets/img/svg-logo/add-fav.svg" alt="favorite logo"></button>
-                <button class="action-bttn"><img src="../../dist/assets/img/svg-logo/play.svg" alt="play logo"></button>
+            <div class="player-desktop">
+                <div class="player-actions">
+                    <div class="player-action-buttons">
+                        <button class="action-button" id="pauseBttn">
+                            <img src="../../dist/assets/img/player-icons/pause.svg" alt="pause icon">
+                        </button>
+                        <button class="action-button" id="prevBttn">
+                            <img src="../../dist/assets/img/player-icons/prev-song.svg" alt="previous icon">
+                        </button>
+                        <button class="action-button" id="nextBttn">
+                            <img src="../../dist/assets/img/player-icons/next-song.svg" alt="next icon">
+                        </button>
+                        <button class="action-button" id="shuffleBttn">
+                            <img src="../../dist/assets/img/player-icons/shuffle.svg" alt="shuffle icon">
+                        </button>
+                        <button class="action-button" id="repeatBttn">
+                            <img src="../../dist/assets/img/player-icons/repeat.svg" alt="repeat icon">
+                        </button>
+
+                    </div>
+                    <div class="player-progress-bar">
+                        <span class="time" id="cur">0:00</span>
+                        <input type="range" id="range" min="0" max="285" 
+                                value="0" class="progress-bar">
+                        <span class="time" id="dur">4:45</span>
+                    </div>
+                    <button class="action-button" id="muteBttn">
+                        <img src="../../dist/assets/img/player-icons/volume.svg" alt="mute volume icon">
+                    </button>
+                </div>
+                <div class="player-title"></div>
             </div>
         </div>
         <div class="nav-wrapper">
             <nav class="nav-bar" aria-label="mobile navigation">
-                <a class="nav-link" href="../../index.html"><div class="nav-item"><img src="../../dist/assets/img/svg-logo/home.svg" alt="home logo"><span>Home</span></div></a>
-                <a class="nav-link" href="#"><div class="nav-item"><img src="../../dist/assets/img/svg-logo/discover.svg" alt="discover logo"><span>Discover</span></div></a>
-                <a class="nav-link filter" href="search.html"><div class="nav-item"><img src="../../dist/assets/img/svg-logo/search.svg" alt="search logo"><span>Search</span></div></a>
-                <a class="nav-link" href="library.html"><div class="nav-item"><img src="../../dist/assets/img/svg-logo/library.svg" alt="library logo"><span>Library</span></div></a>
-                <a class="nav-link" href="#"><div class="nav-item"><img src="../../dist/assets/img/svg-logo/me.svg" alt="profile logo"><span>Me</span></div></a>
+                <a class="nav-link filter" href="../../index.html">
+                    <div class="nav-item">
+                        <img src="../../dist/assets/img/svg-logo/home.svg" alt="home logo">
+                        <span>Home</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <div class="nav-item">
+                        <img src="../../dist/assets/img/svg-logo/discover.svg" alt="discover logo">
+                        <span>Discover</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="search.html">
+                    <div class="nav-item">
+                        <img src="../../dist/assets/img/svg-logo/search.svg" alt="search logo">
+                        <span>Search</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="library.html">
+                    <div class="nav-item">
+                        <img src="../../dist/assets/img/svg-logo/library.svg" alt="library logo">
+                        <span>Library</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <div class="nav-item">
+                        <img src="../../dist/assets/img/svg-logo/me.svg" alt="profile logo">
+                        <span>Me</span>
+                    </div>
+                </a>
             </nav>
         </div>
     </footer>
