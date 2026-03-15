@@ -13,6 +13,7 @@ navLink.forEach(link => {
     });
 });
 
+// this one friends activity. on clicking it appears and hides
 const friendsBtn = document.getElementById('friends-activity');
 const friendsPanel = document.getElementById('friends-panel');
 const friendsCloseBtn = document.getElementById('friends-close-btn');
@@ -34,6 +35,7 @@ friendsBtn.addEventListener('click', (e) => {
 
 friendsCloseBtn.addEventListener('click', closeFriends);
 
+// this is for player progress bar
 const range = document.getElementById('range');
 const cur = document.getElementById('cur');
 function format(sec) {
