@@ -17,6 +17,14 @@
 }
 .filter-bttn-wrapper{
     @include flex-center(1rem);
+    button{
+        transition: color 0.2s linear, transform 0.2s linear;
+
+        &:hover{
+            color: greenyellow;
+            transform: scale(1.05); 
+        }
+    }
 }
 .filter-bttn{
     background-color: transparent;
@@ -114,12 +122,20 @@
 .more-bttn{
     @include flex-center(0.5rem);
     padding: 0 0.8rem;
-
+    height: 2rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    &:hover{
+        div{
+            background-color: greenyellow;
+        }
+    }
     div{
         width: 0.5rem;
         height: 0.5rem;
         border-radius: 50%;
         background: $text-color;
+        transition: background-color 0.2s linear;
     }
 }
 .pagination-btn-container{
@@ -131,8 +147,9 @@
     align-items: flex-start;
     width: 100%;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-behavior: smooth;
-    padding-top: 1.5rem;
+    padding: 1.5rem 0.5rem 0;
 
     &::-webkit-scrollbar {
         display: none;
@@ -144,6 +161,10 @@
     flex: 0 0 14rem;
     flex-direction: column;
     cursor: pointer;
+    transition: transform 0.2s linear;
+    &:hover{
+        transform: scale(1.03);
+    }
 }
 .card-banner{
     width: 100%;

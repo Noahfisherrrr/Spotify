@@ -438,6 +438,13 @@ footer {
   align-items: center;
   gap: 1rem;
 }
+.filter-bttn-wrapper button {
+  transition: color 0.2s linear, transform 0.2s linear;
+}
+.filter-bttn-wrapper button:hover {
+  color: greenyellow;
+  transform: scale(1.05);
+}
 
 .filter-bttn {
   background-color: transparent;
@@ -564,12 +571,19 @@ footer {
   align-items: center;
   gap: 0.5rem;
   padding: 0 0.8rem;
+  height: 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+.more-bttn:hover div {
+  background-color: greenyellow;
 }
 .more-bttn div {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
   background: #898989;
+  transition: background-color 0.2s linear;
 }
 
 .pagination-btn-container {
@@ -585,8 +599,9 @@ footer {
   align-items: flex-start;
   width: 100%;
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-behavior: smooth;
-  padding-top: 1.5rem;
+  padding: 1.5rem 0.5rem 0;
 }
 .suggested-card-container::-webkit-scrollbar {
   display: none;
@@ -603,6 +618,10 @@ footer {
   flex: 0 0 14rem;
   flex-direction: column;
   cursor: pointer;
+  transition: transform 0.2s linear;
+}
+.suggestion-card:hover {
+  transform: scale(1.03);
 }
 
 .card-banner {
