@@ -51,3 +51,18 @@ function updateTrack(){
 }
 range.addEventListener('input', updateTrack);
 updateTrack();
+
+// this one is for pagination in section
+
+document.querySelectorAll('.next-pgnt-bttn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const container = document.getElementById(btn.dataset.target);
+        container.scrollBy({left: 300, behavior: 'smooth'});
+    });
+});
+document.querySelectorAll('.prev-pgnt-bttn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const container = document.getElementById(btn.dataset.target);
+        container.scrollBy({left: -300, behavior: 'smooth'});
+    });
+});

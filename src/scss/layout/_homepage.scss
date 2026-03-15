@@ -21,7 +21,7 @@
         transition: color 0.2s linear, transform 0.2s linear;
 
         &:hover{
-            color: greenyellow;
+            color: #1DB954;
             transform: scale(1.05); 
         }
     }
@@ -53,7 +53,7 @@
     border-radius: 1rem;
     flex-grow: 1;
 }
-.img{
+.filtered-item-img{
     width: 4.3rem;
     border-radius: 0.5rem;
     }
@@ -127,7 +127,7 @@
     cursor: pointer;
     &:hover{
         div{
-            background-color: greenyellow;
+            background-color: #1DB954;
         }
     }
     div{
@@ -252,10 +252,16 @@
     .pagination-btn-container{
         @include flex-center(0.5rem);
     }
-    #next-pgnt-bttn, #prev-pgnt-bttn{
+    .next-pgnt-bttn, .prev-pgnt-bttn{
         background: transparent;
         width: 100%;
         padding: 1rem;
+        transition: filter 0.2s linear;
+        &:hover{
+            filter: invert(61%) sepia(53%) 
+                        saturate(3025%) hue-rotate(104deg) 
+                        brightness(96%) contrast(90%);
+        }
         img{
             max-width: 4rem;
             width: 100%;
