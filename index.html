@@ -12,7 +12,7 @@
     <header>
         <nav class="header-nav-bar" aria-label="desktop navigation">
             <a class="header-nav-link" href="src/pages/Library.html">
-                <div class="header-nav-item filter">
+                <div class="header-nav-item">
                     <img src="dist/assets/img/svg-logo/library.svg" alt="library logo">
                     <span>My Library</span>
                 </div>
@@ -68,7 +68,7 @@
     </header>
     <aside class="sidebar" aria-label="library navigation">
         <!-- <nav class="library-navigation"> -->
-            <a href="">
+            <a href="" class="sidebar-link">
                 <div class="sidebar-items">
                     <img src="dist/assets/img/svg-logo/pins.svg" alt="pins logo">
                     <span>Pins</span>
@@ -77,7 +77,7 @@
                     <img src="dist/assets/img/svg-logo/more-vector.svg" alt="more">
                 </div>
             </a>
-            <a href="">
+            <a href="" class="sidebar-link">
                 <div class="sidebar-items">
                     <img src="dist/assets/img/svg-logo/playlist.svg" alt="playlist logo">
                     <span>Playlist</span>
@@ -86,43 +86,43 @@
                     <img src="dist/assets/img/svg-logo/more-vector.svg" alt="more">
                 </div>
             </a>
-            <a href="">
+            <a href="" class="sidebar-link">
                 <div class="sidebar-items">
                     <img src="dist/assets/img/svg-logo/liked-songs.svg" alt="liked songs logo">
                     <span>Liked Songs</span>
                 </div>
             </a>
-            <a href="">
+            <a href="" class="sidebar-link">
                 <div class="sidebar-items">
                     <img src="dist/assets/img/svg-logo/saves.svg" alt="saves logo">
                     <span>Saves</span>
                 </div>
             </a>
-            <a href="">
+            <a href="" class="sidebar-link">
                 <div class="sidebar-items">
                     <img src="dist/assets/img/svg-logo/albums.svg" alt="albums logo">
                     <span>Albums</span>
                 </div>
             </a>
-            <a href="">
+            <a href="" class="sidebar-link">
                 <div class="sidebar-items">
                     <img src="dist/assets/img/svg-logo/folders.svg" alt="folders logo">
                     <span>Folders</span>
                 </div>
             </a>
-            <a href="">
+            <a href="" class="sidebar-link">
                 <div class="sidebar-items">
                     <img src="dist/assets/img/svg-logo/podcasts.svg" alt="podcasts logo">
                     <span>Podcasts</span>
                 </div>
             </a>
-            <a href="">
+            <a href="" class="sidebar-link">
                 <div class="sidebar-items">
                     <img src="dist/assets/img/svg-logo/audio-books.svg" alt="audio books logo">
                     <span>Audio Books</span>
                 </div>
             </a>
-            <a href="">
+            <a href="" class="sidebar-link">
                 <div class="sidebar-items">
                     <img src="dist/assets/img/svg-logo/artists.svg" alt="artists logo">
                     <span>Artists</span>
@@ -144,42 +144,42 @@
         </section>
         <section class="filtered-content">
             <article class="filtered-item" >
-                <img src="dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="img">
+                <img src="dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="filtered-item-img">
                 <div class="filtered-item-info">
                     <span class="filtered-item-title">Get Lucky (feat. Pharrell Williams and Nile Rodgers)</span>
                     <span class="filtered-item-artist">Daft Punk</span>
                 </div>
             </article>
             <article class="filtered-item" >
-                <img src="dist/assets/img/album-img/daily-mix-2.png" alt="daily mix 2" class="img">
+                <img src="dist/assets/img/album-img/daily-mix-2.png" alt="daily mix 2" class="filtered-item-img">
                 <div class="filtered-item-info">
                     <span class="filtered-item-title">Daily Mix 2</span>
                     <span class="filtered-item-artist">Spotify</span>
                 </div>
             </article>
             <article class="filtered-item" >
-                <img src="dist/assets/img/album-img/daily-mix.png" alt="daily mix" class="img">
+                <img src="dist/assets/img/album-img/daily-mix.png" alt="daily mix" class="filtered-item-img">
                 <div class="filtered-item-info">
                     <span class="filtered-item-title">Daily Mix</span>
                     <span class="filtered-item-artist">Spotify</span>
                 </div>
             </article>
             <article class="filtered-item">
-                <img src="dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="img">
+                <img src="dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="filtered-item-img">
                 <div class="filtered-item-info">
                     <span class="filtered-item-title">Instant Crush</span>
                     <span class="filtered-item-artist">Daft Punk</span>
                 </div>
             </article>
             <article class="filtered-item">
-                <img src="dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="img">
+                <img src="dist/assets/img/album-img/daft-punk.png" alt="daft punk" class="filtered-item-img">
                 <div class="filtered-item-info">
                     <span class="filtered-item-title">Around the world</span>
                     <span class="filtered-item-artist">Daft Punk</span>
                 </div>
             </article>
             <article class="filtered-item">
-                <img src="dist/assets/img/album-img/rchp.png" alt="red hot chili peppers" class="img">
+                <img src="dist/assets/img/album-img/rchp.png" alt="red hot chili peppers" class="filtered-item-img">
                 <div class="filtered-item-info">
                     <span class="filtered-item-title">Rock mix</span>
                     <span class="filtered-item-artist">Spotify</span>
@@ -191,10 +191,10 @@
                 <h3>Made For You</h3>
                 <div class="more-bttn-container">
                     <div class="pagination-btn-container">
-                        <button id="prev-pgnt-bttn">
+                        <button class="prev-pgnt-bttn" data-target="made-for-you">
                             <img src="dist/assets/img/svg-logo/prev-pgnt.svg" alt="prev pagination" >
                         </button>
-                        <button id="next-pgnt-bttn">
+                        <button class="next-pgnt-bttn" data-target="made-for-you">
                             <img src="dist/assets/img/svg-logo/next-pgnt.svg" alt="next pagination" >
                         </button>
                     </div>
@@ -205,7 +205,7 @@
                     </div>
                 </div>
             </div>
-            <div class="suggested-card-container">
+            <div class="suggested-card-container" id="made-for-you">
                 <article class="suggestion-card">
                     <div class="card-banner">
                         <img src="dist/assets/img/made-for-you/image1.png" alt="discover weekly">
@@ -315,10 +315,10 @@
                 <h3>Your top mixes</h3>
                 <div class="more-bttn-container">
                     <div class="pagination-btn-container">
-                        <button id="prev-pgnt-bttn">
+                        <button class="prev-pgnt-bttn" data-target="top-mixes">
                             <img src="dist/assets/img/svg-logo/prev-pgnt.svg" alt="prev pagination" >
                         </button>
-                        <button id="next-pgnt-bttn">
+                        <button class="next-pgnt-bttn" data-target="top-mixes">
                             <img src="dist/assets/img/svg-logo/next-pgnt.svg" alt="next pagination" >
                         </button>
                     </div>
@@ -329,7 +329,7 @@
                     </div>
                 </div>
             </div>
-            <div class="suggested-card-container">
+            <div class="suggested-card-container" id="top-mixes">
                 <article class="suggestion-card">
                     <div class="card-banner">
                         <img src="dist/assets/img/top-mixed/image1.png" alt="discover weekly">

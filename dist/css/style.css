@@ -158,10 +158,10 @@ button {
     text-decoration: none;
     border-radius: 0.8rem;
     padding: 1rem;
-    transition: box-shadow 0.3s ease;
+    transition: filter 0.3s linear;
   }
-  .header-nav-link:hover, .header-nav-link:active, .header-nav-link-mid:hover, .header-nav-link-mid:active {
-    box-shadow: inset 0 0 0 100px #111111;
+  .header-nav-link:hover, .header-nav-link-mid:hover {
+    filter: invert(61%) sepia(53%) saturate(3025%) hue-rotate(104deg) brightness(96%) contrast(90%);
   }
   .profile-container {
     display: flex;
@@ -411,6 +411,10 @@ footer {
     font-size: 1.4rem;
     letter-spacing: 3%;
     cursor: pointer;
+    transition: filter 0.2s linear;
+  }
+  .sidebar-link:hover {
+    filter: invert(61%) sepia(53%) saturate(3025%) hue-rotate(104deg) brightness(96%) contrast(90%);
   }
 }
 .friends-panel {
@@ -442,7 +446,7 @@ footer {
   transition: color 0.2s linear, transform 0.2s linear;
 }
 .filter-bttn-wrapper button:hover {
-  color: greenyellow;
+  color: #1DB954;
   transform: scale(1.05);
 }
 
@@ -481,7 +485,7 @@ footer {
   flex-grow: 1;
 }
 
-.img {
+.filtered-item-img {
   width: 4.3rem;
   border-radius: 0.5rem;
 }
@@ -576,7 +580,7 @@ footer {
   cursor: pointer;
 }
 .more-bttn:hover div {
-  background-color: greenyellow;
+  background-color: #1DB954;
 }
 .more-bttn div {
   width: 0.5rem;
@@ -721,12 +725,16 @@ footer {
     align-items: center;
     gap: 0.5rem;
   }
-  #next-pgnt-bttn, #prev-pgnt-bttn {
+  .next-pgnt-bttn, .prev-pgnt-bttn {
     background: transparent;
     width: 100%;
     padding: 1rem;
+    transition: filter 0.2s linear;
   }
-  #next-pgnt-bttn img, #prev-pgnt-bttn img {
+  .next-pgnt-bttn:hover, .prev-pgnt-bttn:hover {
+    filter: invert(61%) sepia(53%) saturate(3025%) hue-rotate(104deg) brightness(96%) contrast(90%);
+  }
+  .next-pgnt-bttn img, .prev-pgnt-bttn img {
     max-width: 4rem;
     width: 100%;
   }
