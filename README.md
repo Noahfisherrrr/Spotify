@@ -95,4 +95,4 @@ cd spotify-clone
 
 ---
 
-📌 **Giorgi Chutlashvili, Sandro Tvaliashvili, Noah Fischer** — Frontend Developer 🌟
+📌 **Giorgi Chutlashvili, Sandro Tvaliashvili, Noah Kvirkveliar** — Frontend Developer 
